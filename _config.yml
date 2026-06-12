@@ -1,0 +1,64 @@
+# Site
+title: "Can KILIÇ"
+tagline: "Full Stack Developer"
+description: >-
+  Can KILIÇ — Full Stack Developer. JavaScript/TypeScript, React ve .NET Core
+  ile çalışıyorum. Geliştirdiğim projeler ve blog yazıları.
+url: "https://cnklc.me"
+baseurl: ""
+lang: tr
+
+# Author / contact
+author:
+  name: "Can KILIÇ"
+  email: "cnklc@ymail.com"
+
+social:
+  github: "cnklc"
+  linkedin: "cnklc"
+  email: "cnklc@ymail.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+timezone: Europe/Istanbul
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+# Pagination / lists
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github

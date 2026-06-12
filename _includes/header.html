@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">CK</span>
+      <span class="brand-name">{{ site.author.name }}</span>
+    </a>
+    <nav class="site-nav">
+      {% assign p = page.url %}
+      <a href="{{ '/' | relative_url }}" class="{% if p == '/' %}active{% endif %}">Hakkımda</a>
+      <a href="{{ '/projects/' | relative_url }}" class="{% if p contains '/projects' %}active{% endif %}">Projeler</a>
+      <a href="{{ '/blog/' | relative_url }}" class="{% if p contains '/blog' %}active{% endif %}">Blog</a>
+    </nav>
+  </div>
+</header>

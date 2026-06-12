@@ -1,0 +1,104 @@
+---
+layout: default
+title: "Can KILIÇ — Full Stack Developer"
+description: "Full Stack Developer. JavaScript/TypeScript, React ve .NET Core ile modern web uygulamaları geliştiriyorum."
+---
+
+<section class="wrap hero">
+  <p class="eyebrow">Merhaba, ben</p>
+  <h1>Can KILIÇ</h1>
+  <p class="role">Full Stack Developer</p>
+  <p class="lead">
+    JavaScript/TypeScript, React ve .NET Core ile uçtan uca web uygulamaları
+    geliştiriyorum. Temiz kod, iyi mimari ve kullanıcı deneyimine önem veririm.
+    Öğrendiklerimi ve geliştirdiğim projeleri burada paylaşıyorum.
+  </p>
+  <div class="hero-actions">
+    <a class="btn" href="{{ '/projects/' | relative_url }}">Projelerim</a>
+    <a class="btn btn-ghost" href="mailto:{{ site.social.email }}">İletişime Geç</a>
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">Hakkımda</h2>
+  <p>
+    Full stack geliştirici olarak hem frontend hem backend tarafında çalışıyorum.
+    Frontend'de React ve TypeScript ekosistemini, backend'de ise .NET Core ile
+    güçlü ve ölçeklenebilir API'ler kurmayı tercih ediyorum. İlgi alanlarım arasında
+    yazılım mimarisi, performans optimizasyonu ve geliştirici deneyimi yer alıyor.
+  </p>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">Yetenekler</h2>
+  <div class="skill-grid">
+    <span class="skill">JavaScript</span>
+    <span class="skill">TypeScript</span>
+    <span class="skill">React</span>
+    <span class="skill">Node.js</span>
+    <span class="skill">.NET Core</span>
+    <span class="skill">C#</span>
+    <span class="skill">REST API</span>
+    <span class="skill">SQL</span>
+    <span class="skill">Git</span>
+    <span class="skill">Docker</span>
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">Deneyim</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <p class="entry-role">Full Stack Developer · <span class="entry-org">Şirket Adı</span></p>
+      <span class="entry-date">2023 — Günümüz</span>
+    </div>
+    <p>
+      Burayı kendi deneyiminle güncelle. Üzerinde çalıştığın projeleri, kullandığın
+      teknolojileri ve elde ettiğin sonuçları kısaca anlat.
+    </p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <p class="entry-role">Yazılım Geliştirici · <span class="entry-org">Önceki Şirket</span></p>
+      <span class="entry-date">2021 — 2023</span>
+    </div>
+    <p>
+      Önceki rollerini ve sorumluluklarını buraya ekleyebilirsin.
+    </p>
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">Öne Çıkan Projeler</h2>
+  <div class="card-list">
+    {% assign featured = site.projects | sort: "date" | reverse %}
+    {% for project in featured limit: 3 %}
+      <a class="card" href="{{ project.url | relative_url }}">
+        <h3 class="card-title">{{ project.title }}</h3>
+        {% if project.summary %}<p class="card-summary">{{ project.summary }}</p>{% endif %}
+        <div class="card-meta">
+          {% if project.tech %}{% for t in project.tech %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+  <p style="margin-top:20px;"><a href="{{ '/projects/' | relative_url }}">Tüm projeleri gör →</a></p>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">Son Yazılar</h2>
+  <div class="card-list">
+    {% for post in site.posts limit: 3 %}
+      <a class="card" href="{{ post.url | relative_url }}">
+        <h3 class="card-title">{{ post.title }}</h3>
+        {% if post.summary %}<p class="card-summary">{{ post.summary }}</p>{% endif %}
+        <div class="card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+  <p style="margin-top:20px;"><a href="{{ '/blog/' | relative_url }}">Tüm yazıları gör →</a></p>
+</section>

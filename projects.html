@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Projeler"
+permalink: /projects/
+description: "Geliştirdiğim açık kaynak ve kişisel projeler."
+---
+
+<div class="wrap">
+  <div class="page-head">
+    <h1>Projeler</h1>
+    <p>Geliştirdiğim ve üzerinde çalıştığım projeler.</p>
+  </div>
+
+  <div class="card-list">
+    {% assign projects = site.projects | sort: "date" | reverse %}
+    {% for project in projects %}
+      <a class="card" href="{{ project.url | relative_url }}">
+        <h2 class="card-title">{{ project.title }}</h2>
+        {% if project.summary %}<p class="card-summary">{{ project.summary }}</p>{% endif %}
+        <div class="card-meta">
+          {% if project.tech %}{% for t in project.tech %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+
+  {% if site.projects.size == 0 %}
+    <p style="color:var(--text-faint)">Henüz proje yok. <code>_projects/</code> klasörüne bir .md dosyası ekle.</p>
+  {% endif %}
+</div>
