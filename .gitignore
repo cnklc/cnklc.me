@@ -6,3 +6,7 @@ vendor/
 .bundle/
 Gemfile.lock
 .DS_Store
+
+# Otomatik üretilen taslaklar ve içerik planı (yayınlanmaz, özel kalır)
+_drafts/
+content-plan/
