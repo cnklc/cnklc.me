@@ -4,8 +4,8 @@ tagline: "Full Stack Developer"
 description: >-
   Can KILIÇ — Full Stack Developer. JavaScript/TypeScript, React ve .NET Core
   ile çalışıyorum. Geliştirdiğim projeler ve blog yazıları.
-url: "https://cnklc.me"
-baseurl: ""
+url: "https://cnklc.github.io"
+baseurl: "/cnklc.me"
 lang: tr
 
 # Author / contact
