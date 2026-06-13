@@ -1,10 +1,12 @@
+{% assign lang = page.lang | default: 'tr' %}
+{% assign t = site.data.i18n[lang] %}
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-links">
       {% if site.social.github %}<a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
       {% if site.social.linkedin %}<a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
-      {% if site.social.email %}<a href="mailto:{{ site.social.email }}">E-posta</a>{% endif %}
+      {% if site.social.email %}<a href="mailto:{{ site.social.email }}">{{ t.email_label }}</a>{% endif %}
     </div>
-    <p class="footer-note">© {{ 'now' | date: "%Y" }} {{ site.author.name }}. Jekyll ile yapıldı.</p>
+    <p class="footer-note">© {{ 'now' | date: "%Y" }} {{ site.author.name }}. {{ t.footer_built }}</p>
   </div>
 </footer>

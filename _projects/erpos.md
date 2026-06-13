@@ -1,5 +1,7 @@
 ---
 layout: project
+lang: tr
+translation_url: /en/projects/erpos/
 title: "Erpos"
 date: 2022-04-01
 summary: "Colin's ve Loft mağazalarında kullanılan yazar kasa (POS) uygulaması."

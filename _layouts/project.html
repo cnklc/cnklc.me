@@ -1,17 +1,20 @@
 ---
 layout: default
 ---
+{% assign lang = page.lang | default: 'tr' %}
+{% assign t = site.data.i18n[lang] %}
+{% if lang == 'en' %}{% assign projects_url = '/en/projects/' %}{% else %}{% assign projects_url = '/projects/' %}{% endif %}
 <article class="wrap post">
   <header class="post-header">
-    <a class="back-link" href="{{ '/projects/' | relative_url }}">← Tüm projeler</a>
+    <a class="back-link" href="{{ projects_url | relative_url }}">{{ t.back_to_projects }}</a>
     <h1 class="post-title">{{ page.title }}</h1>
     {% if page.summary %}<p class="post-summary">{{ page.summary }}</p>{% endif %}
     <div class="post-meta">
-      {% if page.tech %}{% for t in page.tech %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}
+      {% if page.tech %}{% for tech in page.tech %}<span class="tag">{{ tech }}</span>{% endfor %}{% endif %}
     </div>
     <div class="project-actions">
-      {% if page.repo %}<a class="btn" href="{{ page.repo }}" target="_blank" rel="noopener">Kaynak Kodu</a>{% endif %}
-      {% if page.demo %}<a class="btn btn-ghost" href="{{ page.demo }}" target="_blank" rel="noopener">Canlı Demo</a>{% endif %}
+      {% if page.repo and page.repo != "" %}<a class="btn" href="{{ page.repo }}" target="_blank" rel="noopener">{{ t.source_code }}</a>{% endif %}
+      {% if page.demo and page.demo != "" %}<a class="btn btn-ghost" href="{{ page.demo }}" target="_blank" rel="noopener">{{ t.live_demo }}</a>{% endif %}
     </div>
   </header>
   <div class="prose">

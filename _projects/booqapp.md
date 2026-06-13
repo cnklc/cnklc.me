@@ -1,5 +1,7 @@
 ---
 layout: project
+lang: tr
+translation_url: /en/projects/booqapp/
 title: "BooqApp"
 date: 2018-01-01
 summary: "Rentificial ekosisteminin pazaryeri/vitrin ürünü — işletmeleri ve bireysel kullanıcıları buluşturan C2C kiralama platformu."

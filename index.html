@@ -1,5 +1,7 @@
 ---
 layout: default
+lang: tr
+translation_url: /en/
 title: "Can KILIÇ — Senior .NET Developer"
 description: "Senior .NET Developer. 10 yıldır C#, .NET ve PostgreSQL ile uçtan uca yazılım; yapay zeka ve otomasyon çözümlerine odaklanıyorum."
 ---
@@ -110,7 +112,7 @@ description: "Senior .NET Developer. 10 yıldır C#, .NET ve PostgreSQL ile uçt
 <section class="wrap section">
   <h2 class="section-title">Öne Çıkan Projeler</h2>
   <div class="card-list">
-    {% assign featured = site.projects | sort: "date" | reverse %}
+    {% assign featured = site.projects | where: "lang", "tr" | sort: "date" | reverse %}
     {% for project in featured limit: 3 %}
       <a class="card" href="{{ project.url | relative_url }}">
         <h3 class="card-title">{{ project.title }}</h3>
@@ -127,7 +129,8 @@ description: "Senior .NET Developer. 10 yıldır C#, .NET ve PostgreSQL ile uçt
 <section class="wrap section">
   <h2 class="section-title">Son Yazılar</h2>
   <div class="card-list">
-    {% for post in site.posts limit: 3 %}
+    {% assign tr_posts = site.posts | where: "lang", "tr" %}
+    {% for post in tr_posts limit: 3 %}
       <a class="card" href="{{ post.url | relative_url }}">
         <h3 class="card-title">{{ post.title }}</h3>
         {% if post.summary %}<p class="card-summary">{{ post.summary }}</p>{% endif %}

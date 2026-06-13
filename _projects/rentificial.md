@@ -1,5 +1,7 @@
 ---
 layout: project
+lang: tr
+translation_url: /en/projects/rentificial/
 title: "Rentificial"
 date: 2018-02-01
 summary: "Her türlü kiralanabilir varlığı yöneten, web tabanlı ve sektörden bağımsız kiralama yönetim platformu (SaaS)."

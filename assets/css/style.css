@@ -72,6 +72,11 @@ a:hover { text-decoration: underline; }
 }
 .site-nav a:hover { color: var(--text); background: var(--bg-soft); text-decoration: none; }
 .site-nav a.active { color: var(--text); background: var(--bg-soft); }
+.site-nav a.lang-switch {
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em;
+  border: 1px solid var(--border); margin-left: 6px; padding: 6px 10px;
+}
+.site-nav a.lang-switch:hover { border-color: var(--text-faint); color: var(--text); }
 
 /* ===== Main ===== */
 .site-main { min-height: 70vh; padding: 72px 0 96px; }

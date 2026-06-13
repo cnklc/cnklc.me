@@ -1,21 +1,21 @@
 ---
 layout: default
-lang: tr
-translation_url: /en/blog/
+lang: en
+permalink: /en/blog/
+translation_url: /blog/
 title: "Blog"
-permalink: /blog/
-description: "Yazılım, geliştirme ve öğrendiklerim üzerine yazılar."
+description: "Notes on software development and things I learn."
 ---
 
 <div class="wrap">
   <div class="page-head">
     <h1>Blog</h1>
-    <p>Yazılım geliştirme, öğrendiklerim ve notlarım.</p>
+    <p>Notes on software development and things I learn.</p>
   </div>
 
-  {% assign tr_posts = site.posts | where: "lang", "tr" %}
+  {% assign en_posts = site.posts | where: "lang", "en" %}
   <div class="card-list">
-    {% for post in tr_posts %}
+    {% for post in en_posts %}
       <a class="card" href="{{ post.url | relative_url }}">
         <h2 class="card-title">{{ post.title }}</h2>
         {% if post.summary %}<p class="card-summary">{{ post.summary }}</p>{% endif %}
@@ -27,7 +27,7 @@ description: "Yazılım, geliştirme ve öğrendiklerim üzerine yazılar."
     {% endfor %}
   </div>
 
-  {% if tr_posts.size == 0 %}
-    <p style="color:var(--text-faint)">Henüz yazı yok. <code>_posts/</code> klasörüne bir .md dosyası ekle.</p>
+  {% if en_posts.size == 0 %}
+    <p style="color:var(--text-faint)">No posts yet.</p>
   {% endif %}
 </div>

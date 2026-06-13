@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
+{% assign lang = page.lang | default: 'tr' %}
+{% assign t = site.data.i18n[lang] %}
+{% if lang == 'en' %}{% assign blog_url = '/en/blog/' %}{% else %}{% assign blog_url = '/blog/' %}{% endif %}
 <article class="wrap post">
   <header class="post-header">
-    <a class="back-link" href="{{ '/blog/' | relative_url }}">← Tüm yazılar</a>
+    <a class="back-link" href="{{ blog_url | relative_url }}">{{ t.back_to_blog }}</a>
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>

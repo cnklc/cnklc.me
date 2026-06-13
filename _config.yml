@@ -39,6 +39,10 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      lang: tr
+  - scope:
+      path: ""
       type: posts
     values:
       layout: post
@@ -47,6 +51,10 @@ defaults:
       type: projects
     values:
       layout: project
+  - scope:
+      path: "en"
+    values:
+      lang: en
 
 # Pagination / lists
 paginate: 5

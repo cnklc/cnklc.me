@@ -1,5 +1,7 @@
 ---
 layout: project
+lang: tr
+translation_url: /en/projects/dijital-sirketim/
 title: "Dijital Şirketim"
 date: 2016-04-01
 summary: "Küçük ve orta ölçekli şirketlerin ön muhasebe işlemlerini web üzerinden yönettiği online yazılım."

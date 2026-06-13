@@ -1,21 +1,21 @@
 ---
 layout: default
-lang: tr
-translation_url: /en/projects/
-title: "Projeler"
-permalink: /projects/
-description: "Geliştirdiğim açık kaynak ve kişisel projeler."
+lang: en
+permalink: /en/projects/
+translation_url: /projects/
+title: "Projects"
+description: "Projects I've built and worked on."
 ---
 
 <div class="wrap">
   <div class="page-head">
-    <h1>Projeler</h1>
-    <p>Geliştirdiğim ve üzerinde çalıştığım projeler.</p>
+    <h1>Projects</h1>
+    <p>Projects I've built and worked on.</p>
   </div>
 
-  {% assign tr_projects = site.projects | where: "lang", "tr" | sort: "date" | reverse %}
+  {% assign en_projects = site.projects | where: "lang", "en" | sort: "date" | reverse %}
   <div class="card-list">
-    {% for project in tr_projects %}
+    {% for project in en_projects %}
       <a class="card" href="{{ project.url | relative_url }}">
         <h2 class="card-title">{{ project.title }}</h2>
         {% if project.summary %}<p class="card-summary">{{ project.summary }}</p>{% endif %}
@@ -26,7 +26,7 @@ description: "Geliştirdiğim açık kaynak ve kişisel projeler."
     {% endfor %}
   </div>
 
-  {% if tr_projects.size == 0 %}
-    <p style="color:var(--text-faint)">Henüz proje yok. <code>_projects/</code> klasörüne bir .md dosyası ekle.</p>
+  {% if en_projects.size == 0 %}
+    <p style="color:var(--text-faint)">No projects yet.</p>
   {% endif %}
 </div>

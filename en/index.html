@@ -1,0 +1,143 @@
+---
+layout: default
+lang: en
+permalink: /en/
+translation_url: /
+title: "Can KILIÇ — Senior .NET Developer"
+description: "Senior .NET Developer. 10 years of end-to-end software with C#, .NET and PostgreSQL, focused on AI and automation solutions."
+---
+
+<section class="wrap hero">
+  <p class="eyebrow">Hi, I'm</p>
+  <h1>Can KILIÇ</h1>
+  <p class="role">Senior .NET Developer · AI &amp; Automation</p>
+  <p class="lead">
+    I've been building end-to-end software in the .NET ecosystem for 10 years —
+    from enterprise retail systems to AI-powered automation. Lately I turn
+    repetitive business processes into self-running systems using n8n, AI agents
+    and custom automation flows.
+  </p>
+  <div class="hero-actions">
+    <a class="btn" href="{{ '/en/projects/' | relative_url }}">{{ site.data.i18n.en.my_projects }}</a>
+    <a class="btn btn-ghost" href="mailto:{{ site.social.email }}">{{ site.data.i18n.en.contact }}</a>
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">About</h2>
+  <p>
+    I started out with full-stack training at BilgeAdam and, before long, was
+    teaching there myself. Today I build across a wide range — from enterprise
+    retail systems to AI-powered automation solutions.
+  </p>
+  <p>
+    I'm currently at Colin's, developing the point-of-sale (POS) application used
+    across Colin's and Loft stores, along with its companion mobile app, in C#,
+    .NET and PostgreSQL. Before that, at Komut Teknolojisi, I was part of a team
+    that built both in-house products and enterprise client projects for companies
+    like Europcar Türkiye and AirTurk.
+  </p>
+  <p>
+    What sets me apart: I can design a solid backend architecture and make it
+    scalable with AI and automation. For new projects, collaborations, or
+    AI/automation consulting, reach me at
+    <a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a>.
+  </p>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">Skills</h2>
+  <div class="skill-grid">
+    <span class="skill">C#</span>
+    <span class="skill">.NET</span>
+    <span class="skill">.NET Core</span>
+    <span class="skill">ASP.NET MVC</span>
+    <span class="skill">Entity Framework</span>
+    <span class="skill">PostgreSQL</span>
+    <span class="skill">TypeScript</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">n8n</span>
+    <span class="skill">AI &amp; Automation</span>
+    <span class="skill">REST API</span>
+    <span class="skill">Git</span>
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <p class="entry-role">Senior Software Developer · <span class="entry-org">Colin's</span></p>
+      <span class="entry-date">Apr 2022 — Present</span>
+    </div>
+    <p>
+      I develop the point-of-sale (POS) application used across Colin's and Loft
+      stores in C#, .NET and PostgreSQL. Beyond this application — which sits at
+      the center of store operations — I also lead development of the connected
+      mobile app.
+    </p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <p class="entry-role">Software Developer · <span class="entry-org">Komut Teknolojisi Yazılım Üssü</span></p>
+      <span class="entry-date">Apr 2016 — Apr 2022</span>
+    </div>
+    <p>
+      My first software role. At a technology agency building both its own products
+      and enterprise client projects, I did end-to-end development with C#/.NET and
+      ASP.NET MVC. I worked on products like Rentificial (a SaaS rental platform for
+      any rentable asset), BooqApp (a rental marketplace) and Dijital Şirketim
+      (online bookkeeping), as well as custom solutions for Europcar Türkiye and
+      AirTurk.
+    </p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <p class="entry-role">Instructor · <span class="entry-org">BilgeAdam Teknoloji</span></p>
+      <span class="entry-date">Oct 2017 — Oct 2020</span>
+    </div>
+    <p>
+      I taught .NET full-stack development: C#, Object-Oriented Programming, MSSQL,
+      HTML, CSS and JavaScript. Over 3 years as a part-time instructor I prepared 6
+      classes and 96 students in total to become production-level developers. I had
+      first joined this institution as a student myself.
+    </p>
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">{{ site.data.i18n.en.featured_projects }}</h2>
+  <div class="card-list">
+    {% assign featured = site.projects | where: "lang", "en" | sort: "date" | reverse %}
+    {% for project in featured limit: 3 %}
+      <a class="card" href="{{ project.url | relative_url }}">
+        <h3 class="card-title">{{ project.title }}</h3>
+        {% if project.summary %}<p class="card-summary">{{ project.summary }}</p>{% endif %}
+        <div class="card-meta">
+          {% if project.tech %}{% for t in project.tech %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+  <p style="margin-top:20px;"><a href="{{ '/en/projects/' | relative_url }}">{{ site.data.i18n.en.all_projects }}</a></p>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">{{ site.data.i18n.en.recent_posts }}</h2>
+  <div class="card-list">
+    {% assign en_posts = site.posts | where: "lang", "en" %}
+    {% for post in en_posts limit: 3 %}
+      <a class="card" href="{{ post.url | relative_url }}">
+        <h3 class="card-title">{{ post.title }}</h3>
+        {% if post.summary %}<p class="card-summary">{{ post.summary }}</p>{% endif %}
+        <div class="card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+  <p style="margin-top:20px;"><a href="{{ '/en/blog/' | relative_url }}">{{ site.data.i18n.en.all_posts }}</a></p>
+</section>

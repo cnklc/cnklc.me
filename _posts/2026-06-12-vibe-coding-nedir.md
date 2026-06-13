@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: tr
+translation_url: /en/blog/vibe-coding-nedir/
 title: "Vibe Coding Nedir?"
 date: 2026-06-12
 summary: "Kodu satır satır yazmak yerine niyeti tarif edip yapay zekâya bıraktığımız yeni geliştirme biçimi: vibe coding. Ne işe yarar, nerede sınırları var?"

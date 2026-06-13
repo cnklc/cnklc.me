@@ -1,5 +1,7 @@
 ---
 layout: project
+lang: tr
+translation_url: /en/projects/portfolio-sitesi/
 title: "Kişisel Portföy Sitesi"
 date: 2026-06-12
 summary: "Jekyll ile geliştirdiğim, markdown ile güncellenebilen kişisel web sitem (bu site)."

@@ -1,5 +1,7 @@
 ---
 layout: project
+lang: tr
+translation_url: /en/projects/airturk/
 title: "AirTurk — Otel & Havalimanı Transfer Sistemi"
 date: 2019-01-01
 summary: "Almanya merkezli turizm acentesi AirTurk için Türkiye'deki otel ve havalimanı transfer operasyonlarını yöneten sistem."

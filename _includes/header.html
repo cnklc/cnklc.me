@@ -1,14 +1,22 @@
+{% assign lang = page.lang | default: 'tr' %}
+{% assign t = site.data.i18n[lang] %}
+{% if lang == 'en' %}{% assign prefix = '/en' %}{% else %}{% assign prefix = '' %}{% endif %}
+{% assign home_url = prefix | append: '/' %}
+{% assign projects_url = prefix | append: '/projects/' %}
+{% assign blog_url = prefix | append: '/blog/' %}
+{% if lang == 'en' %}{% assign alt_url = page.translation_url | default: '/' %}{% else %}{% assign alt_url = page.translation_url | default: '/en/' %}{% endif %}
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
+    <a class="brand" href="{{ home_url | relative_url }}">
       <span class="brand-mark">CK</span>
       <span class="brand-name">{{ site.author.name }}</span>
     </a>
     <nav class="site-nav">
       {% assign p = page.url %}
-      <a href="{{ '/' | relative_url }}" class="{% if p == '/' %}active{% endif %}">Hakkımda</a>
-      <a href="{{ '/projects/' | relative_url }}" class="{% if p contains '/projects' %}active{% endif %}">Projeler</a>
-      <a href="{{ '/blog/' | relative_url }}" class="{% if p contains '/blog' %}active{% endif %}">Blog</a>
+      <a href="{{ home_url | relative_url }}" class="{% if p == home_url %}active{% endif %}">{{ t.nav_about }}</a>
+      <a href="{{ projects_url | relative_url }}" class="{% if p contains '/projects' %}active{% endif %}">{{ t.nav_projects }}</a>
+      <a href="{{ blog_url | relative_url }}" class="{% if p contains '/blog' %}active{% endif %}">{{ t.nav_blog }}</a>
+      <a href="{{ alt_url | relative_url }}" class="lang-switch" hreflang="{% if lang == 'en' %}tr{% else %}en{% endif %}">{% if lang == 'en' %}TR{% else %}EN{% endif %}</a>
     </nav>
   </div>
 </header>

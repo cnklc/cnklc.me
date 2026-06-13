@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: tr
+translation_url: /en/blog/coding-agent-nedir/
 title: "Coding Agent (Kodlama Ajanı) Nedir?"
 date: 2026-06-13
 summary: "Otomatik tamamlama ile kodlama ajanı arasındaki fark ne? Bir aracın 'ajan' sayılması için neye ihtiyaç var ve Claude Code bunu nasıl yapıyor?"

@@ -1,5 +1,7 @@
 ---
 layout: project
+lang: tr
+translation_url: /en/projects/europcar/
 title: "Europcar Türkiye — Filo Yönetimi"
 date: 2020-01-01
 summary: "Europcar Türkiye'nin araç filo yönetimi yazılımının geliştirilmesinde danışmanlık."
