@@ -8,7 +8,7 @@ date: 2026-06-12
 summary: "My personal website, built with Jekyll and updated via markdown (this site)."
 tech: [Jekyll, HTML, CSS, GitHub Pages]
 repo: "https://github.com/cnklc/cnklc.me"
-demo: "https://cnklc.github.io/cnklc.me/"
+demo: "https://cnklc.me"
 ---
 
 ## About the Project
