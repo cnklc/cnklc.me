@@ -4,7 +4,7 @@ lang: en
 permalink: /en/blog/subscription-vs-api/
 translation_url: /blog/subscription-vs-api/
 title: "Subscription or API?"
-date: 2026-06-15
+date: 2026-06-14
 summary: "Should you use Claude Code with a monthly subscription or an API key? How each one is billed, how they differ, and when each makes more sense."
 tags: [claude-code, pricing, getting-started]
 draft_series: "Claude Code Journey"

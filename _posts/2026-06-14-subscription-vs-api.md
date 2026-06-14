@@ -3,7 +3,7 @@ layout: post
 lang: tr
 translation_url: /en/blog/subscription-vs-api/
 title: "Abonelik mi, API Kullanımı mı?"
-date: 2026-06-15
+date: 2026-06-14
 summary: "Claude Code'u aylık abonelikle mi yoksa API anahtarıyla mı kullanmalı? İkisinin faturalama mantığı, farkları ve hangi durumda hangisinin daha mantıklı olduğu."
 tags: [claude-code, pricing, baslangic]
 draft_series: "Claude Code Yolculuğu"
