@@ -20,6 +20,9 @@ parmakları klavyeye koyma zamanı. Claude Code'un en tam donanımlı hâli
 terminalde yaşıyor ve adı **Claude CLI**. Bu yazıda kurulumdan ilk oturuma
 kadar olan yolu gezeceğiz.
 
+> 🔴 **Canlı demo:** Anlatılanları çalışırken görmek istersen
+> [webex.cnklc.me](https://webex.cnklc.me) adresinden takip edebilirsin.
+
 ## Claude CLI tam olarak ne?
 
 Resmi tanımıyla Claude Code; kod tabanını okuyan, dosyaları düzenleyen,

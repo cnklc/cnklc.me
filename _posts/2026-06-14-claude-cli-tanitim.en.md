@@ -21,6 +21,9 @@ Now it's time to put fingers on the keyboard. Claude Code's most fully featured
 form lives in the terminal, and it's called the **Claude CLI**. In this post
 we'll walk the path from installation to the first session.
 
+> 🔴 **Live demo:** If you'd like to watch this in action, follow along at
+> [webex.cnklc.me](https://webex.cnklc.me).
+
 ## What exactly is the Claude CLI?
 
 By its official definition, Claude Code is an agentic coding tool that reads your
