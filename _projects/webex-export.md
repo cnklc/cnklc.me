@@ -7,7 +7,7 @@ date: 2026-06-14
 summary: "Webex konuşmalarını ve eklerini tarayıcı üzerinden indirip ZIP olarak arşivleyen, modern arayüzlü bir web uygulaması."
 tech: [React, TypeScript, Vite, Framer Motion, JSZip, Lucide]
 repo: "https://github.com/cnklc/Webex-export"
-demo: ""
+demo: "https://webex.cnklc.me"
 ---
 
 ## Proje Hakkında

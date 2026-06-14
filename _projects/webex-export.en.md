@@ -8,7 +8,7 @@ date: 2026-06-14
 summary: "A client-side React app that downloads and archives Webex conversations and attachments straight from the browser, packaged into a structured ZIP."
 tech: [React, TypeScript, Vite, Framer Motion, JSZip, Lucide]
 repo: "https://github.com/cnklc/Webex-export"
-demo: ""
+demo: "https://webex.cnklc.me"
 ---
 
 ## About the Project
