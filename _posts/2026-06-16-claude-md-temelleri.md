@@ -110,4 +110,4 @@ yolu olan Skills'e bakacağız.
 
 ---
 
-_Sıradaki yazı: Skills'e Genel Bakış_
+*Sıradaki yazı: [Skills'e Genel Bakış]({{ '/blog/skills-genel-bakis/' | relative_url }})*

@@ -100,4 +100,4 @@ daha yakından bakacağız.
 
 ---
 
-*Sıradaki yazı: CLAUDE.md Temelleri*
+*Sıradaki yazı: [CLAUDE.md Temelleri]({{ '/blog/claude-md-temelleri/' | relative_url }})*

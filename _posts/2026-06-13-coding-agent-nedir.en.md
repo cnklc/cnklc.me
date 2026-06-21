@@ -87,4 +87,4 @@ next post we'll look at its concrete face — the Claude CLI in the terminal.
 
 ---
 
-*Next post: Getting Started with the Claude CLI*
+*Next post: [Getting Started with the Claude CLI]({{ '/en/blog/claude-cli-tanitim/' | relative_url }})*

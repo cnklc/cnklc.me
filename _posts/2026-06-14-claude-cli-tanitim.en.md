@@ -120,4 +120,4 @@ also applies on the other surfaces.
 
 ---
 
-_Next post: Subscription or API Usage?_
+*Next post: [Subscription or API?]({{ '/en/blog/subscription-vs-api/' | relative_url }})*

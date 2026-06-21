@@ -100,4 +100,4 @@ Claude actually uses to get this work done — **tools**.
 
 ---
 
-*Next post: Tools*
+*Next post: [Tools]({{ '/en/blog/tools-araclar/' | relative_url }})*

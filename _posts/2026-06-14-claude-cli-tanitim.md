@@ -117,4 +117,4 @@ için terminalde kurduğun her şey diğer yüzeylerde de geçerli.
 
 ---
 
-*Sıradaki yazı: Abonelik mi, API Kullanımı mı?*
+*Sıradaki yazı: [Abonelik mi, API Kullanımı mı?]({{ '/blog/subscription-vs-api/' | relative_url }})*

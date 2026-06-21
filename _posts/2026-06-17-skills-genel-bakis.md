@@ -98,4 +98,4 @@ yaparken kullandığı şeye — **araçlara (tools)** — bakacağız.
 
 ---
 
-*Sıradaki yazı: Tools (Araçlar)*
+*Sıradaki yazı: [Tools (Araçlar)]({{ '/blog/tools-araclar/' | relative_url }})*

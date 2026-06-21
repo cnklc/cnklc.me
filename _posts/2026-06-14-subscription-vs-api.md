@@ -84,4 +84,4 @@ bakacağız.
 
 ---
 
-*Sıradaki yazı: Claude'u Kullanmanın Yolları*
+*Sıradaki yazı: [Claude'u Kullanmanın Yolları]({{ '/blog/claude-kullanim-yollari/' | relative_url }})*

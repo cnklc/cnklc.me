@@ -97,4 +97,4 @@ are the agent's hands, the next topic is its memory: context.
 
 ---
 
-*Next post: Managing Context*
+*Next post: [Managing Context]({{ '/en/blog/context-baglam/' | relative_url }})*

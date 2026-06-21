@@ -98,4 +98,4 @@ topic closely tied to context — Claude Code's different **modes**.
 
 ---
 
-*Next post: Modes*
+*Next post: [Modes]({{ '/en/blog/modes-modlar/' | relative_url }})*

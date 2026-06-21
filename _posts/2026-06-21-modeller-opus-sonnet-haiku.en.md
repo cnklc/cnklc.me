@@ -12,8 +12,11 @@ roadmap_topic: "Models: Opus, Sonnet, Haiku"
 ---
 
 > This stop in the "Claude Code Journey" series tackles the question "which brain
-> am I using?" Earlier posts covered modes, context, and tools; now it's the turn
-> of the models behind them.
+> am I using?" Earlier posts covered
+> [modes]({{ '/en/blog/modes-modlar/' | relative_url }}),
+> [context]({{ '/en/blog/context-baglam/' | relative_url }}), and
+> [tools]({{ '/en/blog/tools-araclar/' | relative_url }}); now it's the turn of
+> the models behind them.
 
 If you've used Claude Code for a while, you've probably seen the names "Opus,"
 "Sonnet," and "Haiku." These aren't three separate products — they're different

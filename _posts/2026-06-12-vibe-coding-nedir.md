@@ -70,4 +70,4 @@ kontrolü bırakmamakta.
 
 ---
 
-_Sıradaki yazı: Coding Agent (Kodlama Ajanı) Nedir?_
+*Sıradaki yazı: [Coding Agent (Kodlama Ajanı) Nedir?]({{ '/blog/coding-agent-nedir/' | relative_url }})*

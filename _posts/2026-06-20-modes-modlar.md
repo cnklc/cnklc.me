@@ -122,4 +122,4 @@ ayar.
 
 ---
 
-*Sıradaki yazı: Modeller: Opus, Sonnet, Haiku*
+*Sıradaki yazı: [Modeller: Opus, Sonnet, Haiku]({{ '/blog/modeller-opus-sonnet-haiku/' | relative_url }})*

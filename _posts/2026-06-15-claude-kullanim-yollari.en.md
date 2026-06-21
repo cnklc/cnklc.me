@@ -100,4 +100,4 @@ is free. In the next post we'll take a closer look at that shared brain — the
 
 ---
 
-*Next post: CLAUDE.md Basics*
+*Next post: [CLAUDE.md Basics]({{ '/en/blog/claude-md-temelleri/' | relative_url }})*

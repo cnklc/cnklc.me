@@ -90,4 +90,4 @@ bakacağız.
 
 ---
 
-*Sıradaki yazı: Claude CLI'a Giriş*
+*Sıradaki yazı: [Claude CLI'a Giriş]({{ '/blog/claude-cli-tanitim/' | relative_url }})*

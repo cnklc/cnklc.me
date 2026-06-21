@@ -98,4 +98,4 @@ bir sonraki konu onun hafızası: bağlam.
 
 ---
 
-*Sıradaki yazı: Context (Bağlam) Yönetimi*
+*Sıradaki yazı: [Context (Bağlam) Yönetimi]({{ '/blog/context-baglam/' | relative_url }})*

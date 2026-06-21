@@ -73,4 +73,4 @@ take the speed without giving up control.
 
 ---
 
-*Next post: What Is a Coding Agent?*
+*Next post: [What Is a Coding Agent?]({{ '/en/blog/coding-agent-nedir/' | relative_url }})*

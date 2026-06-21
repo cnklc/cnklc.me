@@ -85,4 +85,4 @@ we'll set money aside and look at the different ways to use Claude.
 
 ---
 
-*Next post: Ways to Use Claude*
+*Next post: [Ways to Use Claude]({{ '/en/blog/claude-kullanim-yollari/' | relative_url }})*

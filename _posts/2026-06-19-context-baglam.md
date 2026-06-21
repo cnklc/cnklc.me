@@ -100,4 +100,4 @@ ilişkili bir konuya — Claude Code'un farklı **modlarına** — bakacağız.
 
 ---
 
-*Sıradaki yazı: Modlar (Modes)*
+*Sıradaki yazı: [Modlar (Modes)]({{ '/blog/modes-modlar/' | relative_url }})*

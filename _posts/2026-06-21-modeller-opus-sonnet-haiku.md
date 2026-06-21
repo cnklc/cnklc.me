@@ -11,8 +11,11 @@ roadmap_topic: "Modeller: Opus, Sonnet, Haiku"
 ---
 
 > "Claude Code Yolculuğu" serisinin bu durağında "hangi beyni kullanıyorum?"
-> sorusuna geliyoruz. Önceki yazılarda modlardan, bağlamdan ve araçlardan
-> bahsettim; şimdi sıra bunların arkasındaki modellerde.
+> sorusuna geliyoruz. Önceki yazılarda
+> [modlardan]({{ '/blog/modes-modlar/' | relative_url }}),
+> [bağlamdan]({{ '/blog/context-baglam/' | relative_url }}) ve
+> [araçlardan]({{ '/blog/tools-araclar/' | relative_url }}) bahsettim; şimdi sıra
+> bunların arkasındaki modellerde.
 
 Claude Code'u bir süredir kullanıyorsan muhtemelen "Opus", "Sonnet" ve
 "Haiku" isimlerini görmüşsündür. Bunlar üç ayrı ürün değil, aynı model

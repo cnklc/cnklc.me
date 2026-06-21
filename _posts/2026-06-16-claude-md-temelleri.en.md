@@ -110,4 +110,4 @@ package repeatable workflows.
 
 ---
 
-*Next post: Skills Overview*
+*Next post: [Skills Overview]({{ '/en/blog/skills-genel-bakis/' | relative_url }})*

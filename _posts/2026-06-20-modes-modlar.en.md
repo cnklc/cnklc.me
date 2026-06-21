@@ -119,4 +119,4 @@ deliberate dial between trust and speed.
 
 ---
 
-*Next post: Models: Opus, Sonnet, Haiku*
+*Next post: [Models: Opus, Sonnet, Haiku]({{ '/en/blog/modeller-opus-sonnet-haiku/' | relative_url }})*
