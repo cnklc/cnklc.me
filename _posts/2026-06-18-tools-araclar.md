@@ -43,15 +43,16 @@ Birkaç tanesi neredeyse her oturumda devreye giriyor:
 - **Grep:** Dosya *içinde* desen arar. POSIX grep değil, ripgrep tabanlıdır;
   yani regex söz dizimi biraz farklı (Go'da `interface{}` aramak için kalıp
   `interface\{\}` olur).
-- **Bash:** Terminal komutlarını çalıştırır. Komutlar ayrı süreçlerde koşar,
-  varsayılan zaman aşımı iki dakikadır ve `export` ettiğin değişkenler bir
-  sonraki komuta taşınmaz.
+- **Bash:** Terminal komutlarını kalıcı bir kabuk (shell) oturumunda çalıştırır
+  — yani bir komutta `export` ettiğin değişken sonraki komutlara taşınır. Uzun
+  işler için zaman aşımı ayarlanabilir ve komutları arka planda çalıştırabilirsin.
 - **Edit:** Dosyada hedefli değişiklik yapar.
 - **Write:** Dosya oluşturur veya baştan yazar.
 
-Bunların dışında MCP ile araç bağlama, web'e erişen `WebFetch`/`WebSearch`,
-arka planda izleme yapan `Monitor` gibi pek çok araç daha var. Araç setin
-sağlayıcına, platformuna ve ayarlarına göre değişebiliyor.
+Bunların dışında MCP ile bağlanan araçlar, web'e erişen `WebFetch`/`WebSearch`,
+alt görevleri yürüten `Task` (subagent) ve Jupyter defterlerini düzenleyen
+`NotebookEdit` gibi pek çok araç daha var. Araç setin sağlayıcına, platformuna
+ve ayarlarına göre değişebiliyor.
 
 ## Asıl önemli ayrım: izin gerektiren araçlar
 

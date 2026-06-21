@@ -43,15 +43,16 @@ A handful of them show up in almost every session:
 - **Grep:** Searches *inside* files for a pattern. It's built on ripgrep, not
   POSIX grep, so the regex syntax differs a bit (finding `interface{}` in Go
   takes the pattern `interface\{\}`).
-- **Bash:** Runs terminal commands. Each command runs in its own process, the
-  default timeout is two minutes, and variables you `export` don't carry over to
-  the next command.
+- **Bash:** Runs terminal commands in a persistent shell session — so a variable
+  you `export` in one command carries over to the next. You can set a timeout for
+  long-running work and run commands in the background.
 - **Edit:** Makes targeted edits to a file.
 - **Write:** Creates a file or overwrites it from scratch.
 
-Beyond these there are many more — connecting custom tools via MCP, the web-facing
-`WebFetch`/`WebSearch`, the background-watching `Monitor`, and others. Your exact
-tool set can vary with your provider, platform, and settings.
+Beyond these there are many more — tools connected via MCP, the web-facing
+`WebFetch`/`WebSearch`, the `Task` tool that runs subagents, and `NotebookEdit`
+for Jupyter notebooks, among others. Your exact tool set can vary with your
+provider, platform, and settings.
 
 ## The split that really matters: tools that ask permission
 

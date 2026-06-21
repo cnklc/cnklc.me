@@ -64,18 +64,18 @@ yürütmek için pratik. iOS uygulamasında da mevcut.
 
 ## Hepsi aynı yere bağlanıyor
 
-İşin güzel tarafı şu: bu yüzeyler ayrı ürünler değil. Dokümanın dediği gibi,
-"her yüzey aynı temel Claude Code motoruna bağlanır", yani `CLAUDE.md`
-dosyaların, ayarların ve MCP sunucuların hepsinde geçerli oluyor. Bir
-oturumu bir ortamda başlatıp başka birinde devam ettirebiliyorsun:
+İşin güzel tarafı şu: bu yüzeyler ayrı ürünler değil; hepsi aynı temel
+Claude Code motoruna bağlanıyor. Yani `CLAUDE.md` dosyaların, ayarların ve
+MCP sunucuların hepsinde geçerli oluyor. Bir oturumu bir ortamda başlatıp
+başka birinde devam ettirebiliyorsun:
 
 | İstediğim şey | En iyi seçenek |
 | --- | --- |
-| Telefondan/başka cihazdan oturumu sürdürmek | Remote Control |
-| Lokalde başlat, mobilde devam et | Web veya iOS uygulaması |
+| Telefondan görev başlatıp masaüstünde açmak | Mobil uygulama + Masaüstü |
+| Lokalde başlat, mobilde takip et | Web veya iOS uygulaması |
 | PR inceleme ve issue triyajını otomatikleştirmek | GitHub Actions / GitLab CI/CD |
 | Slack'ten gelen hatayı PR'a çevirmek | Slack entegrasyonu |
-| Tekrarlayan görevleri zamanlamak | Routines veya masaüstü zamanlanmış görevler |
+| Tekrarlayan görevleri zamanlamak | `/schedule` ya da masaüstü zamanlanmış görevler |
 
 Bunların ötesinde, tamamen kendi iş akışını kurmak istersen **Agent SDK**
 ile Claude Code'un araçlarını ve yeteneklerini kullanan özel ajanlar bile

@@ -60,13 +60,11 @@ sonradan `git diff` ile topluca incelemek istediğimde açıyorum.
 ## plan: önce araştır, dokunma
 
 Plan modu favorilerimden. Claude bu modda kodu okuyabilir, keşif için
-komut çalıştırabilir ama **kaynağına dokunmaz**; sadece bir plan yazar.
-`Shift+Tab` ile girebilir ya da tek bir istek için başına `/plan`
-ekleyebilirsin. Plan hazır olduğunda Claude onu sunar ve nasıl devam
-edeceğini sorar: planı onaylayıp auto modunda mı başlasın, düzenlemeleri
-mi kabul etsin, yoksa her adımı tek tek mi onaylatsın. Büyük bir
-değişikliğe girişmeden önce "önce bana ne yapacağını anlat" demenin
-temiz bir yolu.
+komut çalıştırabilir ama **kaynağına dokunmaz**; sadece bir plan yazar
+(`Shift+Tab` ile girersin). Plan hazır olduğunda onu sunar ve nasıl devam
+edeceğini sorar: onaylayıp başlasın, düzenlemeleri kabul etsin ya da her
+adımı tek tek onaylatsın. Büyük bir değişikliğe girişmeden önce "önce ne
+yapacağını anlat" demenin temiz bir yolu.
 
 ## auto: az sor, arkada güvenlik kontrolü
 

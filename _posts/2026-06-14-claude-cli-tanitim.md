@@ -22,10 +22,10 @@ kadar olan yolu gezeceğiz.
 
 ## Claude CLI tam olarak ne?
 
-Resmi tanımıyla Claude Code; kod tabanını okuyan, dosyaları düzenleyen,
-komutları çalıştıran ve geliştirme araçlarınla entegre olan ajansal bir
-kodlama aracı. CLI ise onun terminal sürümü: doğrudan komut satırından
-proje yönetip kod yazdığın, dosya düzenlettiğin tam özellikli arayüz.
+Resmi dokümanda Claude Code, terminalinde yaşayan ajansal bir kodlama aracı
+olarak tanımlanıyor — dosyaları doğrudan düzenler, komut çalıştırır, commit
+oluşturur. CLI ise onun terminal sürümü: doğrudan komut satırından proje
+yönetip kod yazdığın, dosya düzenlettiğin tam özellikli arayüz.
 
 Önemli bir nokta: Claude Code tek bir yerde yaşamıyor. Terminal, VS Code,
 JetBrains, masaüstü uygulaması ve tarayıcı — hepsi aynı motora bağlanıyor.

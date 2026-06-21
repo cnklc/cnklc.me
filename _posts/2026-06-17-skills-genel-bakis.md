@@ -10,7 +10,7 @@ draft_series: "Claude Code Yolculuğu"
 roadmap_topic: "Skills'e Genel Bakış"
 ---
 
-> "Claude Code Yolculuğu" serisinin altıncı durağı. Önceki yazıda
+> "Claude Code Yolculuğu" serisinin yedinci durağı. Önceki yazıda
 > [CLAUDE.md temellerine]({{ '/blog/claude-md-temelleri/' | relative_url }})
 > bakmıştık. Şimdi bir adım öteye geçip, tekrar eden işleri paketlemenin
 > yolu olan **skill'lere** geliyoruz.
@@ -59,8 +59,8 @@ Buradaki asıl güzellik bağlam (context) ekonomisinde. CLAUDE.md'nin tamamı h
 oturumun başında belleğe yükleniyor. Bir skill'de ise sadece *açıklaması*
 bağlamda duruyor; asıl gövdesi yalnızca skill çağrıldığında yükleniyor.
 Yani uzun bir referans metnini skill olarak tutmak, ihtiyaç duyulana kadar
-neredeyse hiç maliyet çıkarmıyor. Dokümanın deyişiyle: "bir skill'in gövdesi
-sadece kullanıldığında yüklenir."
+neredeyse hiç maliyet çıkarmıyor. Kısacası bir skill'in gövdesi sadece
+kullanıldığında yükleniyor.
 
 ## Skill'ler nerede yaşar?
 
@@ -71,8 +71,8 @@ Bir skill'i nereye koyduğun, kimin kullanacağını belirliyor:
   takımla paylaşılır.
 - **Plugin:** bir eklentinin içinde gelir, `plugin-adı:skill-adı` ad alanıyla.
 
-Aynı isim birden çok seviyede varsa öncelik sırası var: kurumsal > kişisel >
-proje. Güzel tarafı, Claude Code skill klasörlerindeki değişiklikleri canlı
+Aynı isim birden çok seviyede varsa, kurumsal (managed) seviyedeki ayarlar
+diğerlerini geçersiz kılar. Güzel tarafı, Claude Code skill klasörlerindeki değişiklikleri canlı
 izliyor; çoğu durumda yeni bir skill eklediğinde oturumu yeniden başlatmana bile
 gerek kalmıyor.
 

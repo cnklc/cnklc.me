@@ -59,11 +59,11 @@ than approve each one inline.
 ## plan: research first, don't touch
 
 Plan mode is one of my favorites. Here Claude can read code and run commands
-to explore, but it **won't touch your source** — it just writes a plan. You
-enter it with `Shift+Tab`, or prefix a single prompt with `/plan`. When the
-plan is ready, Claude presents it and asks how to proceed: approve and start
-in auto mode, accept edits, or review each step manually. It's a clean way to
-say "tell me what you're going to do first" before a big change.
+to explore, but it **won't touch your source** — it just writes a plan (you
+enter it with `Shift+Tab`). When the plan is ready, Claude presents it and asks
+how to proceed: approve and start, accept edits, or review each step manually.
+It's a clean way to say "tell me what you're going to do first" before a big
+change.
 
 ## auto: fewer prompts, safety checks in the background
 

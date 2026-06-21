@@ -11,7 +11,7 @@ draft_series: "Claude Code Journey"
 roadmap_topic: "Skills Overview"
 ---
 
-> The sixth stop in the "Claude Code Journey" series. Last time we looked at the
+> The seventh stop in the "Claude Code Journey" series. Last time we looked at the
 > [basics of CLAUDE.md]({{ '/en/blog/claude-md-temelleri/' | relative_url }}).
 > Now we take a step further into **skills** — the way to package up repeated
 > work.
@@ -60,8 +60,8 @@ clearly — what it does and in which situation to use it.
 The real beauty here is context economy. All of CLAUDE.md is loaded into memory
 at the start of every session. With a skill, only its *description* sits in
 context; the body itself loads only when the skill is invoked. So keeping a long
-reference text as a skill costs almost nothing until you actually need it. In the
-words of the docs: "a skill's body loads only when it's used."
+reference text as a skill costs almost nothing until you actually need it. In
+short, a skill's body loads only when it's used.
 
 ## Where skills live
 
@@ -73,8 +73,8 @@ Where you put a skill determines who can use it:
   your team via git.
 - **Plugin:** ships inside a plugin, under a `plugin-name:skill-name` namespace.
 
-When the same name exists at multiple levels there's a precedence order:
-enterprise > personal > project. Nicely, Claude Code watches skill directories
+When the same name exists at multiple levels, managed (enterprise) settings
+override the others. Nicely, Claude Code watches skill directories
 for live changes; in most cases adding a new skill takes effect without even
 restarting the session.
 

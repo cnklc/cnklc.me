@@ -39,7 +39,7 @@ ben elle yazdığımız kısma, yani CLAUDE.md'ye odaklanacağım.
 ## Nereye konur?
 
 CLAUDE.md birkaç farklı yerde yaşayabilir ve her konum farklı bir kapsama
-karşılık gelir. En genişten en dara doğru:
+karşılık gelir. Başlıcaları (geniş kapsamdan dara):
 
 - **Yönetilen politika (kurumsal):** Tüm makinedeki herkese uygulanan,
   IT/DevOps tarafından dağıtılan dosya. Şirket standartları, güvenlik kuralları.
@@ -47,8 +47,9 @@ karşılık gelir. En genişten en dara doğru:
   kişisel tercihlerin.
 - **Proje talimatları** → `./CLAUDE.md` ya da `./.claude/CLAUDE.md`. Takımla
   paylaşılan, sürüm kontrolüne giren proje kuralları.
-- **Yerel talimatlar** → `./CLAUDE.local.md`. Sadece sana özel, `.gitignore`'a
-  eklenmesi gereken proje notları (sandbox URL'lerin, test verilerin gibi).
+- **Otomatik hafıza** → `~/.claude/projects/<proje>/memory/`. Claude'un senin
+  düzeltmelerinden öğrenip kendi tuttuğu notlar; elle değil, Claude tarafından
+  yönetilir (her proje/repo için ayrı klasör).
 
 Çoğu insan için başlangıç noktası proje kökündeki `./CLAUDE.md`. En pratik
 yol da onu sıfırdan yazmak değil: bir oturumda `/init` komutunu çalıştır.
@@ -70,9 +71,9 @@ muğlak talimatlara daha az uyuluyor. Bu yüzden somut ol:
 - "Değişiklikleri test et" yerine → "Commit'ten önce `npm test` çalıştır"
 - "Dosyaları düzenli tut" yerine → "API handler'ları `src/api/handlers/` altında"
 
-Birkaç pratik kural daha: dosyayı **200 satırın altında** tut (uzun dosya hem
-bağlam yer, hem uyumu düşürür), başlık ve maddelerle yapılandır, ve çelişen
-kuralları ayıkla — iki kural çakışırsa Claude birini rastgele seçebilir.
+Birkaç pratik kural daha: dosyayı **kısa ve odaklı** tut (uzun dosya hem bağlam
+yer, hem uyumu düşürür), başlık ve maddelerle yapılandır, ve çelişen kuralları
+ayıkla — iki kural çakışırsa Claude birini rastgele seçebilir.
 
 ## İçe aktarma (import)
 

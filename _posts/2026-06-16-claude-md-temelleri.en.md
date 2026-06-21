@@ -38,8 +38,8 @@ write by hand: CLAUDE.md.
 
 ## Where does it go?
 
-CLAUDE.md can live in several places, each with a different scope. From broadest
-to most specific:
+CLAUDE.md can live in several places, each with a different scope. The main ones
+(from broad to specific):
 
 - **Managed policy (organization):** a file deployed by IT/DevOps that applies to
   everyone on the machine. Company standards, security rules.
@@ -47,8 +47,9 @@ to most specific:
   across all your projects.
 - **Project instructions** → `./CLAUDE.md` or `./.claude/CLAUDE.md`.
   Team-shared, version-controlled project rules.
-- **Local instructions** → `./CLAUDE.local.md`. Just for you, meant to be added
-  to `.gitignore` (sandbox URLs, test data, and the like).
+- **Auto memory** → `~/.claude/projects/<project>/memory/`. Notes Claude writes
+  itself from your corrections and preferences; managed by Claude, not by hand
+  (a separate directory per project/repo).
 
 For most people the starting point is `./CLAUDE.md` at the project root. And the
 most practical way isn't to write it from scratch: run `/init` in a session.
@@ -70,7 +71,7 @@ window, and vague instructions get followed less reliably. So be concrete:
 - Instead of "test your changes" → "run `npm test` before committing"
 - Instead of "keep files organized" → "API handlers live in `src/api/handlers/`"
 
-A few more practical rules: keep the file **under 200 lines** (a long file eats
+A few more practical rules: keep the file **short and focused** (a long file eats
 context and reduces adherence), structure it with headers and bullets, and prune
 conflicting rules — if two rules contradict, Claude may pick one arbitrarily.
 

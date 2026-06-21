@@ -23,10 +23,10 @@ we'll walk the path from installation to the first session.
 
 ## What exactly is the Claude CLI?
 
-By its official definition, Claude Code is an agentic coding tool that reads your
-codebase, edits files, runs commands, and integrates with your development tools.
-The CLI is its terminal version: a fully featured interface where you manage
-projects, write code, and have it edit files straight from the command line.
+The official docs describe Claude Code as an agentic coding tool that lives in
+your terminal — it edits files directly, runs commands, and creates commits. The
+CLI is its terminal version: a fully featured interface where you manage projects,
+write code, and have it edit files straight from the command line.
 
 One important point: Claude Code doesn't live in a single place. Terminal,
 VS Code, JetBrains, the desktop app, and the browser — they all connect to the

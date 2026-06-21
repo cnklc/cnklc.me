@@ -64,18 +64,18 @@ available in the iOS app.
 
 ## They all connect to the same place
 
-Here's the nice part: these surfaces aren't separate products. As the docs put
-it, "each surface connects to the same underlying Claude Code engine," meaning
-your `CLAUDE.md` files, settings and MCP servers carry across all of them. You
-can start a session in one environment and continue it in another:
+Here's the nice part: these surfaces aren't separate products; they all connect
+to the same underlying Claude Code engine. That means your `CLAUDE.md` files,
+settings and MCP servers carry across all of them. You can start a session in one
+environment and continue it in another:
 
 | I want to... | Best option |
 | --- | --- |
-| Continue a session from my phone/another device | Remote Control |
-| Start locally, continue on mobile | Web or the iOS app |
+| Dispatch a task from my phone and open it on desktop | Mobile app + Desktop |
+| Start locally, follow up on mobile | Web or the iOS app |
 | Automate PR reviews and issue triage | GitHub Actions / GitLab CI/CD |
 | Turn a Slack bug report into a PR | Slack integration |
-| Run recurring tasks on a schedule | Routines or desktop scheduled tasks |
+| Run recurring tasks on a schedule | `/schedule` or desktop scheduled tasks |
 
 Beyond all this, if you want to build a fully custom workflow, the **Agent SDK**
 even lets you write your own agents powered by Claude Code's tools and
