@@ -106,4 +106,4 @@ a more reasonable bill.
 
 ---
 
-*Next post: Common Use Cases*
+*Next post: [Common Use Cases]({{ '/en/blog/yaygin-kullanim-senaryolari/' | relative_url }})*

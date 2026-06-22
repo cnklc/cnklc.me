@@ -105,4 +105,4 @@ makul bir fatura demek.
 
 ---
 
-*Sıradaki yazı: Yaygın Kullanım Senaryoları*
+*Sıradaki yazı: [Yaygın Kullanım Senaryoları]({{ '/blog/yaygin-kullanim-senaryolari/' | relative_url }})*
