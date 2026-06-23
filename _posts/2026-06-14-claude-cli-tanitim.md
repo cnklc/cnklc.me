@@ -88,8 +88,8 @@ claude "auth modülü için testleri yaz, çalıştır ve hataları düzelt"
 ```
 
 Bir adım ötesi, CLI'ı Unix felsefesine uygun şekilde başka araçlara
-bağlamak. `-p` bayrağı (print/headless) ile Claude'u bir boru hattının
-parçası yapabiliyorsun:
+bağlamak. `-p` bayrağı (print/headless) ile Claude'u bir pipe (borulama)
+hattının parçası yapabiliyorsun:
 
 ```bash
 tail -200 app.log | claude -p "bir anomali görürsen özetle"
@@ -104,7 +104,7 @@ böyle bir kapının olduğunu bilmen yeterli.
 
 Önceki yazılarda söylediğimi burada da tekrar edeyim: CLI komut çalıştırıp
 dosya değiştirebildiği için, ne yaptığını anlamak ve onaylamak senin işin.
-Özellikle internetten gelen kurulum script'lerini `bash`'e borularken ne
+Özellikle internetten gelen kurulum script'lerini `bash`'e pipe'larken ne
 çalıştırdığını bilmekte fayda var. Güçlü bir araç, ama kontrol hâlâ sende.
 
 ## Özet

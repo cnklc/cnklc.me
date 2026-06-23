@@ -120,4 +120,4 @@ the real difference is knowing which one to reach for, when.
 
 ---
 
-*Next post: Headless Mode*
+*Next post: [Headless Mode]({{ '/en/blog/headless-mode/' | relative_url }})*

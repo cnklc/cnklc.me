@@ -123,4 +123,4 @@ hangi işte hangisine uzanacağını bilmekte.
 
 ---
 
-*Sıradaki yazı: Headless (Başsız) Mod*
+*Sıradaki yazı: [Headless (Başsız) Mod]({{ '/blog/headless-mode/' | relative_url }})*
