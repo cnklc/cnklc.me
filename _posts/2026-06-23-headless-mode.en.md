@@ -102,4 +102,4 @@ There's a tradeoff: in bare mode authentication must come from the
 Headless mode turns Claude from "an assistant you talk to" into "a tool you wire
 into your scripts." In the next post we combine that with working in parallel.
 
-Next post: Working with Git Worktrees
+Next post: [Working with Git Worktrees]({{ '/en/blog/git-worktrees/' | relative_url }})

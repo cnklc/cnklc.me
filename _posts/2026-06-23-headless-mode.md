@@ -102,4 +102,4 @@ ileride `-p` için varsayılan olacak.
 Başsız mod, Claude'u "konuştuğun bir asistan"dan "betiğine taktığın bir araca"
 çeviriyor. Bir sonraki yazıda bunu paralel çalışmayla birleştiriyoruz.
 
-Sıradaki yazı: Git Worktrees ile Çalışmak
+Sıradaki yazı: [Git Worktrees ile Çalışmak]({{ '/blog/git-worktrees/' | relative_url }})
