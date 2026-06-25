@@ -111,4 +111,4 @@ moment you go parallel.
 
 ---
 
-*Next post: Understanding Claude Pricing*
+*Next post: [Understanding Claude's Pricing]({{ '/en/blog/claude-fiyatlandirma/' | relative_url }})*

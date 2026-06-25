@@ -108,4 +108,4 @@ işin bitince Claude çoğu zaman temizliği kendi yapar. Karmaşık değil, ama
 
 ---
 
-*Sıradaki yazı: Claude Fiyatlandırmasını Anlamak*
+*Sıradaki yazı: [Claude Fiyatlandırmasını Anlamak]({{ '/blog/claude-fiyatlandirma/' | relative_url }})*
