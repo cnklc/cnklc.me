@@ -3,7 +3,7 @@ layout: post
 lang: tr
 translation_url: /en/blog/git-worktrees/
 title: "Git Worktrees ile Çalışmak"
-date: 2026-06-25
+date: 2026-06-24
 summary: "Aynı anda iki Claude oturumu çalıştırmak istediğinde dosyalar birbirine girer. Git worktrees bunu çözüyor: her oturuma kendi çalışma dizinini ve dalını veriyor."
 tags: [claude-code, git-worktrees, paralel-calisma]
 draft_series: "Claude Code Yolculuğu"

@@ -4,7 +4,7 @@ lang: en
 permalink: /en/blog/git-worktrees/
 translation_url: /blog/git-worktrees/
 title: "Working with Git Worktrees"
-date: 2026-06-25
+date: 2026-06-24
 summary: "Run two Claude sessions at once and their files collide. Git worktrees fix that by giving each session its own working directory and branch."
 tags: [claude-code, git-worktrees, parallel-work]
 draft_series: "Claude Code Journey"

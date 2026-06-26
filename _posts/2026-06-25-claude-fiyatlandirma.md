@@ -112,4 +112,4 @@ düşürürsün.
 
 ---
 
-*Sıradaki yazı: Thinking Modes & Effort (Düşünme Modları)*
+*Sıradaki yazı: [Thinking Modes & Effort (Düşünme Modları)]({{ '/blog/thinking-modes-effort/' | relative_url }})*

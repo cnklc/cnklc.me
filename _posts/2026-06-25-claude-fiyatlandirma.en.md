@@ -112,4 +112,4 @@ model choice, and plan mode.
 
 ---
 
-*Next post: Thinking Modes & Effort*
+*Next post: [Thinking Modes & Effort]({{ '/en/blog/thinking-modes-effort/' | relative_url }})*
