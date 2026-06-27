@@ -96,4 +96,4 @@ yollarından biridir.
 
 ---
 
-*Sıradaki yazı: Prompt Caching (Önbellekleme)*
+*Sıradaki yazı: [Prompt Caching (Önbellekleme)]({{ '/blog/prompt-caching/' | relative_url }})*

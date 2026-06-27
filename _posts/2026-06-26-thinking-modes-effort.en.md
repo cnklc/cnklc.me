@@ -97,4 +97,4 @@ to save on both speed and your bill.
 
 ---
 
-*Next post: Prompt Caching*
+*Next post: [Prompt Caching]({{ '/en/blog/prompt-caching/' | relative_url }})*
