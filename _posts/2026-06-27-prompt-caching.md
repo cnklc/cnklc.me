@@ -101,4 +101,4 @@ değiştirirsen önbellek o kadar sıcak kalır — bu da hem hız hem maliyet d
 
 ---
 
-*Sıradaki yazı: Bağlamı Yönetmek: /compact ve /clear*
+*Sıradaki yazı: [Bağlamı Yönetmek: /compact ve /clear]({{ '/blog/baglam-yonetimi-compact-clear/' | relative_url }})*

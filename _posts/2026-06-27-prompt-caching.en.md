@@ -103,4 +103,4 @@ speed and cost.
 
 ---
 
-*Next post: Managing Context: /compact and /clear*
+*Next post: [Managing Context: /compact and /clear]({{ '/en/blog/baglam-yonetimi-compact-clear/' | relative_url }})*
