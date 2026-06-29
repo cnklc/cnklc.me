@@ -98,4 +98,4 @@ Two commands, one habit.
 
 ---
 
-*Next post: claude CLI Commands (-p, -c, -r)*
+*Next post: [claude CLI Commands (-p, -c, -r)]({{ '/en/blog/claude-cli-komutlari/' | relative_url }})*

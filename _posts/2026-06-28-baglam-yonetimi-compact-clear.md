@@ -95,4 +95,4 @@ yanıt kalitesini artırır. İki komut, tek alışkanlık.
 
 ---
 
-*Sıradaki yazı: claude CLI Komutları (-p, -c, -r)*
+*Sıradaki yazı: [claude CLI Komutları (-p, -c, -r)]({{ '/blog/claude-cli-komutlari/' | relative_url }})*
