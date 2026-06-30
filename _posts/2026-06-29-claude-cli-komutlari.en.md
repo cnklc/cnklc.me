@@ -92,4 +92,4 @@ with a pipe is the most practical way to drop Claude into small automations.
 
 ---
 
-*Next post: Slash Commands Guide (/)*
+*Next post: [A Guide to Slash Commands (/)]({{ '/en/blog/slash-komutlari/' | relative_url }})*

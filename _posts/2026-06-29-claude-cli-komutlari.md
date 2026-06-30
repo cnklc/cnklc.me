@@ -90,4 +90,4 @@ Claude'u küçük otomasyonların içine yerleştirmenin en pratik yoludur.
 
 ---
 
-*Sıradaki yazı: Slash Komutları Rehberi (/)*
+*Sıradaki yazı: [Slash Komutları Rehberi (/)]({{ '/blog/slash-komutlari/' | relative_url }})*
