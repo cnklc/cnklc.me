@@ -4,7 +4,7 @@ lang: tr
 translation_url: /en/blog/context-baglam/
 title: "Context (Bağlam) Yönetimi"
 date: 2026-06-19
-summary: "Claude Code'un 'hafızası' olan context window aslında ne? Neyle dolar, dolduğunda ne olur ve /clear, /compact, /context komutlarıyla onu nasıl kontrol altında tutarsın?"
+summary: "Claude Code'un 'hafızası' olan context window aslında ne? Neden dolar, dolduğunda ne olur ve /clear, /compact, /context komutlarıyla onu nasıl kontrol altında tutarsın?"
 tags: [claude-code, context, baglam]
 draft_series: "Claude Code Yolculuğu"
 roadmap_topic: "Context (Bağlam) Yönetimi"
@@ -15,7 +15,7 @@ roadmap_topic: "Context (Bağlam) Yönetimi"
 > o araçların ürettiği her şeyin biriktiği yere — context'e — geliyoruz.
 
 Claude Code'la bir süre çalıştıktan sonra fark ettiğim bir şey var: aracın
-ne kadar iyi iş çıkardığı, çoğu zaman o anda *neyi hatırladığıyla* doğrudan
+ne kadar iyi iş çıkardığı, çoğu zaman o anda _neyi hatırladığıyla_ doğrudan
 ilgili. İşte bu "hatırladığı şey"in teknik adı **context window** (bağlam
 penceresi). Bence Claude Code'u verimli kullanmanın yarısı bunu anlamaktan
 geçiyor.
@@ -32,7 +32,7 @@ token** büyüklüğünde (kabaca birkaç yüz sayfalık metin).
 context, Claude'un kısa süreli hafızası gibi. Bu yüzden ne koyduğun kadar,
 ne kadar yer kapladığı da önemli.
 
-## Pencere neyle dolar?
+## Pencere neden dolar?
 
 Oturum daha ilk açıldığında pencere tamamen boş değildir. Otomatik olarak
 şunlar yüklenir: sistem talimatları, varsa `CLAUDE.md` dosyaların, önceki
@@ -100,4 +100,4 @@ ilişkili bir konuya — Claude Code'un farklı **modlarına** — bakacağız.
 
 ---
 
-*Sıradaki yazı: [Modlar (Modes)]({{ '/blog/modes-modlar/' | relative_url }})*
+_Sıradaki yazı: [Modlar (Modes)]({{ '/blog/modes-modlar/' | relative_url }})_
