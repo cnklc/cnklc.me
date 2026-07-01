@@ -90,4 +90,4 @@ sunucuları ve kendi skill'lerin bu listeyi genişletir.
 
 ---
 
-_Sıradaki yazı: Kısayollar ve Önekler (!, @, \, Shift+Tab)_
+_Sıradaki yazı: [Kısayollar ve Önekler (!, @, \, Shift+Tab)]({{ '/blog/kisayollar-ve-onekler/' | relative_url }})_

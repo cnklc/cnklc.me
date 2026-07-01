@@ -94,4 +94,4 @@ is there. MCP servers and your own skills extend that list.
 
 ---
 
-*Next post: Shortcuts and Prefixes (!, @, \, Shift+Tab)*
+*Next post: [Shortcuts and Prefixes (!, @, \, Shift+Tab)]({{ '/en/blog/kisayollar-ve-onekler/' | relative_url }})*
