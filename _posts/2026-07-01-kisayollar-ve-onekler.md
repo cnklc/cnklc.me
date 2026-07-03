@@ -92,4 +92,4 @@ olaylara nasıl bağlandığına bakacağız.
 
 ---
 
-*Sıradaki yazı: Hooks: Olaylar ve Matcher'lar*
+*Sıradaki yazı: [Hooks: Olaylar ve Matcher'lar]({{ '/blog/hooks-olaylar-matcherlar/' | relative_url }})*

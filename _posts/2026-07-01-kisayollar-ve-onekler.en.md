@@ -93,4 +93,4 @@ events.
 
 ---
 
-*Next post: Hooks: Events and Matchers*
+*Next post: [Hooks: Events and Matchers]({{ '/en/blog/hooks-olaylar-matcherlar/' | relative_url }})*
