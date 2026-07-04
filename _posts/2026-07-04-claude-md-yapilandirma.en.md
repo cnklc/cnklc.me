@@ -93,4 +93,4 @@ CLAUDE.md's location hierarchy has four layers — managed policy, user, project
 
 ---
 
-*Next post: Creating Skills and Best Practices*
+*Next post: [Creating Skills and Best Practices]({{ '/en/blog/skill-olusturma/' | relative_url }})*

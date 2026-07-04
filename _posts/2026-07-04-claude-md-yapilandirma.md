@@ -92,4 +92,4 @@ CLAUDE.md'nin konum hiyerarşisi dört katmanlı: yönetilen politika, kullanıc
 
 ---
 
-*Sıradaki yazı: Skill Oluşturma ve En İyi Pratikler*
+*Sıradaki yazı: [Skill Oluşturma ve En İyi Pratikler]({{ '/blog/skill-olusturma/' | relative_url }})*
