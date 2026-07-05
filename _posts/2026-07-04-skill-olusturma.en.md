@@ -103,4 +103,4 @@ If a skill doesn't trigger when you expect, the first place to look is the
 `description`: strengthen the keywords. If it triggers too often, narrowing it
 happens in the same place.
 
-Next post: Subagents and Agent Teams
+Next post: [Subagents and Agent Teams]({{ '/en/blog/subagents-ajan-takimlari/' | relative_url }})

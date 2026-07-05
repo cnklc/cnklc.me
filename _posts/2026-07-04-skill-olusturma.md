@@ -99,4 +99,4 @@ değerlendirebilir, skill'li ve skill'siz çalışmaları karşılaştırabilirs
 Skill beklediğinde tetiklenmiyorsa ilk bakılacak yer yine `description`:
 anahtar kelimeleri güçlendir. Çok sık tetikleniyorsa daraltmak da aynı yerden.
 
-Sıradaki yazı: Subagents ve Ajan Takımları
+Sıradaki yazı: [Subagents ve Ajan Takımları]({{ '/blog/subagents-ajan-takimlari/' | relative_url }})
