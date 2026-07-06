@@ -1,0 +1,40 @@
+---
+layout: default
+lang: en
+translation_url: /claude-code-rehberi/
+title: "Claude Code Guide — From Zero to Advanced"
+permalink: /en/claude-code-guide/
+description: "A post series that teaches Claude Code from scratch to advanced: setup, CLAUDE.md, skills, hooks, subagents, automation and more — in logical learning order."
+---
+
+<div class="wrap">
+  <div class="page-head">
+    <h1>Claude Code Guide</h1>
+    <p>
+      The complete "Claude Code Journey" series, in logical learning order.
+      It starts from zero and goes all the way to advanced topics; each post
+      builds on the previous one. This page is updated as new posts land.
+    </p>
+  </div>
+
+  {% assign en_posts = site.posts | where: "lang", "en" %}
+  {% assign prev_section = "" %}
+  {% for topic in site.data.claude_code_seri.topics %}
+    {% assign target = "/en/blog/" | append: topic.slug | append: "/" %}
+    {% assign match = en_posts | where: "url", target | first %}
+    {% if match %}
+      {% if topic.section != prev_section %}
+        {% if prev_section != "" %}</ol>{% endif %}
+        <div class="guide-section">
+          <h2 class="guide-section-title">{{ topic.section_en | default: topic.section }}</h2>
+        </div>
+        <ol class="guide-list">
+        {% assign prev_section = topic.section %}
+      {% endif %}
+      <li><a href="{{ match.url | relative_url }}">{{ match.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  {% if prev_section != "" %}</ol>{% endif %}
+
+  {% include subscribe.html lang="en" %}
+</div>

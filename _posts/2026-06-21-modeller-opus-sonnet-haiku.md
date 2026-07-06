@@ -44,9 +44,9 @@ modeli seçmekten geçiyor.
 
 Claude Code'da modelleri çoğunlukla `opus`, `sonnet`, `haiku` gibi takma
 adlarla seçersin. Bu takma adlar, platformuna göre güncel bir model sürümüne
-çözümlenir. Örneğin Anthropic API üzerinde `opus`, Opus 4.8'e; `sonnet`,
-Sonnet 4.6'ya karşılık geliyor. Yani sen "opus" dersin, sistem o anki en güncel
-Opus sürümünü kullanır.
+çözümlenir. Örneğin bu yazı güncellendiğinde Anthropic API üzerinde `opus`,
+Opus 4.8'e; `sonnet`, Sonnet 5'e karşılık geliyor. Yani sen "opus" dersin,
+sistem o anki en güncel Opus sürümünü kullanır.
 
 Belirli bir sürüme sabitlenmek istersen tam model adını da verebilirsin:
 

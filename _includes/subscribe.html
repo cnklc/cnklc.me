@@ -1,0 +1,16 @@
+{% if site.newsletter.substack and site.newsletter.substack != "" %}
+{% assign lang = include.lang | default: page.lang | default: 'tr' %}
+{% assign t = site.data.i18n[lang] %}
+<div class="subscribe">
+  <h3 class="subscribe-title">{{ t.subscribe_title }}</h3>
+  <p class="subscribe-desc">{{ t.subscribe_desc }}</p>
+  <iframe
+    src="https://{{ site.newsletter.substack }}.substack.com/embed"
+    class="subscribe-embed"
+    frameborder="0"
+    scrolling="no"
+    title="{{ t.subscribe_title }}"
+    loading="lazy"
+  ></iframe>
+</div>
+{% endif %}

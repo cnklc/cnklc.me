@@ -1,0 +1,220 @@
+{
+  "topics": [
+    {
+      "slug": "vibe-coding-nedir",
+      "title": "Vibe Coding Nedir?",
+      "section": "Başlangıç",
+      "section_en": "Getting Started"
+    },
+    {
+      "slug": "coding-agent-nedir",
+      "title": "Coding Agent (Kodlama Ajanı) Nedir?",
+      "section": "Başlangıç",
+      "section_en": "Getting Started"
+    },
+    {
+      "slug": "claude-cli-tanitim",
+      "title": "Claude CLI'a Giriş",
+      "section": "Giriş",
+      "section_en": "Introduction"
+    },
+    {
+      "slug": "subscription-vs-api",
+      "title": "Abonelik mi, API Kullanımı mı?",
+      "section": "Giriş",
+      "section_en": "Introduction"
+    },
+    {
+      "slug": "claude-kullanim-yollari",
+      "title": "Claude'u Kullanmanın Yolları",
+      "section": "Giriş",
+      "section_en": "Introduction"
+    },
+    {
+      "slug": "claude-md-temelleri",
+      "title": "CLAUDE.md Temelleri",
+      "section": "Temeller",
+      "section_en": "Fundamentals"
+    },
+    {
+      "slug": "skills-genel-bakis",
+      "title": "Skills'e Genel Bakış",
+      "section": "Temeller",
+      "section_en": "Fundamentals"
+    },
+    {
+      "slug": "tools-araclar",
+      "title": "Tools (Araçlar)",
+      "section": "Temeller",
+      "section_en": "Fundamentals"
+    },
+    {
+      "slug": "context-baglam",
+      "title": "Context (Bağlam) Yönetimi",
+      "section": "Temeller",
+      "section_en": "Fundamentals"
+    },
+    {
+      "slug": "modes-modlar",
+      "title": "Modlar (Modes)",
+      "section": "Temeller",
+      "section_en": "Fundamentals"
+    },
+    {
+      "slug": "modeller-opus-sonnet-haiku",
+      "title": "Modeller: Opus, Sonnet, Haiku",
+      "section": "Temeller",
+      "section_en": "Fundamentals"
+    },
+    {
+      "slug": "yaygin-kullanim-senaryolari",
+      "title": "Yaygın Kullanım Senaryoları",
+      "section": "Kullanım",
+      "section_en": "Usage"
+    },
+    {
+      "slug": "headless-mode",
+      "title": "Headless (Başsız) Mod",
+      "section": "Kullanım",
+      "section_en": "Usage"
+    },
+    {
+      "slug": "git-worktrees",
+      "title": "Git Worktrees ile Çalışmak",
+      "section": "Kullanım",
+      "section_en": "Usage"
+    },
+    {
+      "slug": "claude-fiyatlandirma",
+      "title": "Claude Fiyatlandırmasını Anlamak",
+      "section": "Maliyet",
+      "section_en": "Cost"
+    },
+    {
+      "slug": "thinking-modes-effort",
+      "title": "Thinking Modes & Effort (Düşünme Modları)",
+      "section": "Maliyet",
+      "section_en": "Cost"
+    },
+    {
+      "slug": "prompt-caching",
+      "title": "Prompt Caching (Önbellekleme)",
+      "section": "Maliyet",
+      "section_en": "Cost"
+    },
+    {
+      "slug": "baglam-yonetimi-compact-clear",
+      "title": "Bağlamı Yönetmek: /compact ve /clear",
+      "section": "Maliyet",
+      "section_en": "Cost"
+    },
+    {
+      "slug": "claude-cli-komutlari",
+      "title": "claude CLI Komutları (-p, -c, -r)",
+      "section": "Komutlar",
+      "section_en": "Commands"
+    },
+    {
+      "slug": "slash-komutlari",
+      "title": "Slash Komutları Rehberi (/)",
+      "section": "Komutlar",
+      "section_en": "Commands"
+    },
+    {
+      "slug": "kisayollar-ve-onekler",
+      "title": "Kısayollar ve Önekler (!, @, \\, Shift+Tab)",
+      "section": "Komutlar",
+      "section_en": "Commands"
+    },
+    {
+      "slug": "hooks-olaylar-matcherlar",
+      "title": "Hooks: Olaylar ve Matcher'lar",
+      "section": "Otomasyon",
+      "section_en": "Automation"
+    },
+    {
+      "slug": "hook-girdi-ciktilari",
+      "title": "Hook Girdi ve Çıktıları",
+      "section": "Otomasyon",
+      "section_en": "Automation"
+    },
+    {
+      "slug": "claude-md-yapilandirma",
+      "title": "CLAUDE.md: Yapı ve Konumlar (Derinlemesine)",
+      "section": "Yapılandırma",
+      "section_en": "Configuration"
+    },
+    {
+      "slug": "skill-olusturma",
+      "title": "Skill Oluşturma ve En İyi Pratikler",
+      "section": "Yapılandırma",
+      "section_en": "Configuration"
+    },
+    {
+      "slug": "subagents-ajan-takimlari",
+      "title": "Subagents ve Ajan Takımları",
+      "section": "Yapılandırma",
+      "section_en": "Configuration"
+    },
+    {
+      "slug": "plan-mode",
+      "title": "Plan Mode (Plan Modu)",
+      "section": "Yapılandırma",
+      "section_en": "Configuration"
+    },
+    {
+      "slug": "output-styles-status-line",
+      "title": "Output Styles ve Status Line Özelleştirme",
+      "section": "Yapılandırma",
+      "section_en": "Configuration"
+    },
+    {
+      "slug": "oturum-yonetimi-resume-rewind",
+      "title": "Oturum Yönetimi: Resume ve Rewind",
+      "section": "Yapılandırma",
+      "section_en": "Configuration"
+    },
+    {
+      "slug": "mcp-ile-arac-baglama",
+      "title": "MCP ile Araç Bağlama",
+      "section": "İleri Seviye",
+      "section_en": "Advanced"
+    },
+    {
+      "slug": "plugins-eklentiler",
+      "title": "Plugins (Eklentiler)",
+      "section": "İleri Seviye",
+      "section_en": "Advanced"
+    },
+    {
+      "slug": "editor-eklentileri-desktop",
+      "title": "Editör Eklentileri ve Masaüstü Uygulaması",
+      "section": "İleri Seviye",
+      "section_en": "Advanced"
+    },
+    {
+      "slug": "agentic-loop-nedir",
+      "title": "Agentic Loop (Ajan Döngüsü) Nedir?",
+      "section": "İleri Seviye",
+      "section_en": "Advanced"
+    },
+    {
+      "slug": "kullanim-en-iyi-pratikleri",
+      "title": "Kullanım İçin En İyi Pratikler",
+      "section": "İleri Seviye",
+      "section_en": "Advanced"
+    },
+    {
+      "slug": "claude-code-guvenlik",
+      "title": "Claude Code Güvenliği",
+      "section": "İleri Seviye",
+      "section_en": "Advanced"
+    },
+    {
+      "slug": "mobile-channels-scheduling",
+      "title": "Mobil, Channels, Scheduling ve Tunnels",
+      "section": "İleri Seviye",
+      "section_en": "Advanced"
+    }
+  ]
+}

@@ -4,6 +4,7 @@
 {% assign home_url = prefix | append: '/' %}
 {% assign projects_url = prefix | append: '/projects/' %}
 {% assign blog_url = prefix | append: '/blog/' %}
+{% if lang == 'en' %}{% assign guide_url = '/en/claude-code-guide/' %}{% assign services_url = '/en/services/' %}{% else %}{% assign guide_url = '/claude-code-rehberi/' %}{% assign services_url = '/hizmetler/' %}{% endif %}
 {% if lang == 'en' %}{% assign alt_url = page.translation_url | default: '/' %}{% else %}{% assign alt_url = page.translation_url | default: '/en/' %}{% endif %}
 <header class="site-header">
   <div class="wrap header-inner">
@@ -16,6 +17,8 @@
       <a href="{{ home_url | relative_url }}" class="{% if p == home_url %}active{% endif %}">{{ t.nav_about }}</a>
       <a href="{{ projects_url | relative_url }}" class="{% if p contains '/projects' %}active{% endif %}">{{ t.nav_projects }}</a>
       <a href="{{ blog_url | relative_url }}" class="{% if p contains '/blog' %}active{% endif %}">{{ t.nav_blog }}</a>
+      <a href="{{ guide_url | relative_url }}" class="{% if p contains 'claude-code-rehberi' or p contains 'claude-code-guide' %}active{% endif %}">{{ t.nav_guide }}</a>
+      <a href="{{ services_url | relative_url }}" class="{% if p contains '/hizmetler' or p contains '/services' %}active{% endif %}">{{ t.nav_services }}</a>
       <a href="{{ alt_url | relative_url }}" class="lang-switch" hreflang="{% if lang == 'en' %}tr{% else %}en{% endif %}">{% if lang == 'en' %}TR{% else %}EN{% endif %}</a>
     </nav>
   </div>

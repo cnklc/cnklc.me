@@ -45,8 +45,8 @@ weight of the task.
 
 In Claude Code you mostly pick models with aliases like `opus`, `sonnet`, and
 `haiku`. These aliases resolve to a current model version depending on your
-platform. On the Anthropic API, for example, `opus` maps to Opus 4.8 and
-`sonnet` maps to Sonnet 4.6. So you say "opus" and the system uses the latest
+platform. As of this update, on the Anthropic API `opus` maps to Opus 4.8 and
+`sonnet` maps to Sonnet 5. So you say "opus" and the system uses the latest
 Opus version available.
 
 If you want to pin a specific version, you can give the full model name:

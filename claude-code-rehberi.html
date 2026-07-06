@@ -1,0 +1,42 @@
+---
+layout: default
+lang: tr
+translation_url: /en/claude-code-guide/
+title: "Claude Code Rehberi — Sıfırdan İleri Seviyeye"
+permalink: /claude-code-rehberi/
+description: "Claude Code'u sıfırdan ileri seviyeye öğreten Türkçe yazı serisi: kurulum, CLAUDE.md, skills, hooks, subagents, otomasyon ve daha fazlası — mantıksal öğrenme sırasıyla."
+---
+
+<div class="wrap">
+  <div class="page-head">
+    <h1>Claude Code Rehberi</h1>
+    <p>
+      "Claude Code Yolculuğu" serisinin tamamı, mantıksal öğrenme sırasıyla.
+      Sıfırdan başlayıp ileri seviyeye kadar gidiyor; her yazı bir öncekinin
+      üzerine kuruluyor. Yeni yazılar eklendikçe bu sayfa güncellenir.
+    </p>
+  </div>
+
+  {% assign tr_posts = site.posts | where: "lang", "tr" %}
+  {% assign prev_section = "" %}
+  {% for topic in site.data.claude_code_seri.topics %}
+    {% assign target = "/blog/" | append: topic.slug | append: "/" %}
+    {% assign match = tr_posts | where: "url", target | first %}
+    {% if topic.section != prev_section %}
+      {% unless forloop.first %}</ol>{% endunless %}
+      <div class="guide-section">
+        <h2 class="guide-section-title">{{ topic.section }}</h2>
+      </div>
+      <ol class="guide-list">
+      {% assign prev_section = topic.section %}
+    {% endif %}
+    {% if match %}
+      <li><a href="{{ match.url | relative_url }}">{{ match.title }}</a></li>
+    {% else %}
+      <li class="guide-soon">{{ topic.title }}<span class="guide-soon-label">{{ site.data.i18n.tr.guide_coming_soon }}</span></li>
+    {% endif %}
+    {% if forloop.last %}</ol>{% endif %}
+  {% endfor %}
+
+  {% include subscribe.html lang="tr" %}
+</div>

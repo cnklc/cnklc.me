@@ -19,6 +19,11 @@ social:
   linkedin: "cnk1c"
   email: "cnklc@ymail.com"
 
+# Newsletter — Substack yayın adı (cnklc.substack.com → "cnklc").
+# substack.com'da yayın açıp adın farklıysa burayı güncelle; boş bırakırsan form gizlenir.
+newsletter:
+  substack: "cnklc"
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
