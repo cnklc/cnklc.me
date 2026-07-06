@@ -104,4 +104,4 @@ agents.
 
 ---
 
-*Next post: Plan Mode*
+*Next post: [Plan Mode]({{ '/en/blog/plan-mode/' | relative_url }})*

@@ -102,4 +102,4 @@ kollu işler içinse birden çok ajanı koordine eden takımlara geçebilirsin.
 
 ---
 
-*Sıradaki yazı: Plan Mode (Plan Modu)*
+*Sıradaki yazı: [Plan Mode (Plan Modu)]({{ '/blog/plan-mode/' | relative_url }})*
