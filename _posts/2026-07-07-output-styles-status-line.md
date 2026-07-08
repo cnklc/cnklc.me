@@ -119,4 +119,4 @@ status line senin görüş alanını ayarlıyor. Bir kere kurup unutuyorsun.
 
 ---
 
-*Sıradaki yazı: Oturum Yönetimi: Resume ve Rewind*
+*Sıradaki yazı: [Oturum Yönetimi: Resume ve Rewind]({{ '/blog/oturum-yonetimi-resume-rewind/' | relative_url }})*

@@ -123,4 +123,4 @@ about them.
 
 ---
 
-*Next post: Session Management: Resume and Rewind*
+*Next post: [Session Management: Resume and Rewind]({{ '/en/blog/oturum-yonetimi-resume-rewind/' | relative_url }})*
