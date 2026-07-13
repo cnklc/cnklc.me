@@ -97,7 +97,7 @@ tail -200 app.log | claude -p "bir anomali görürsen özetle"
 
 Burada Claude artık ekranda oturum açan bir sohbet değil; girdiyi alıp
 sonucu basan, script'lerin ve CI'ın içine gömülebilen bir araç. Bu
-"headless" tarafı serinin ilerisinde ayrı bir yazıyı hak ediyor, şimdilik
+"headless" tarafını [ayrı bir yazıda]({{ '/blog/headless-mode/' | relative_url }}) ele aldım, şimdilik
 böyle bir kapının olduğunu bilmen yeterli.
 
 ## Küçük bir uyarı

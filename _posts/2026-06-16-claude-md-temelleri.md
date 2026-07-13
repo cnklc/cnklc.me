@@ -27,8 +27,7 @@ CLAUDE.md düz bir markdown dosyası. İçine projenin kurallarını, komutları
 mimari kararlarını yazıyorsun. Resmi dokümanın net bir uyarısı var ama: bu dosya
 **bağlam**dır, zorlayıcı bir yapılandırma değil. Yani Claude onu okuyup elinden
 geldiğince uyar, ama "kesinlikle engelle" garantisi vermez. Bir şeyin ne olursa
-olsun çalışmasını ya da engellenmesini istiyorsan, doğru araç bir _hook_'tur
-(serinin ilerleyen yazılarında değineceğim). CLAUDE.md davranışı yönlendirir,
+olsun çalışmasını ya da engellenmesini istiyorsan, doğru araç bir [_hook_'tur]({{ '/blog/hooks-olaylar-matcherlar/' | relative_url }}). CLAUDE.md davranışı yönlendirir,
 dayatmaz.
 
 Buna ek olarak Claude artık **otomatik hafıza** da tutuyor: senin

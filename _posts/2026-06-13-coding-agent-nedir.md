@@ -44,8 +44,7 @@ da bu fiiller:
 - **Gözlemler ve düzeltir:** Çıktıyı görür, hata varsa geri dönüp düzeltir.
 
 İşte bu döngü — planla, uygula, sonucu gözlemle, gerekiyorsa tekrar dene —
-ajansal davranışın kalbi. (Serinin ileride bu "agentic loop" konusuna ayrı bir
-başlık ayıracağım.)
+ajansal davranışın kalbi. (Bu "agentic loop" konusunu [ayrı bir yazıda]({{ '/blog/agentic-loop-nedir/' | relative_url }}) ele aldım.)
 
 ## Küçük bir örnek
 

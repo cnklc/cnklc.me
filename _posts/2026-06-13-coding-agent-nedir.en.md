@@ -44,7 +44,7 @@ commits. Those verbs are exactly what separates an agent from autocomplete:
   and fixes it.
 
 That loop — plan, act, observe the result, retry if needed — is the heart of
-agentic behavior. (I'll devote a separate post to this "agentic loop" later.)
+agentic behavior. (I've devoted [a separate post]({{ '/en/blog/agentic-loop-nedir/' | relative_url }}) to this "agentic loop".)
 
 ## A small example
 

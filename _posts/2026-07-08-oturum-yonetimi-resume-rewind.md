@@ -101,4 +101,4 @@ Bu araçlar birleşince Claude Code'a daha iddialı işler vermek kolaylaşıyor
 
 ---
 
-*Sıradaki yazı: MCP ile Araç Bağlama*
+*Sıradaki yazı: [MCP ile Araç Bağlama]({{ '/blog/mcp-ile-arac-baglama/' | relative_url }})*

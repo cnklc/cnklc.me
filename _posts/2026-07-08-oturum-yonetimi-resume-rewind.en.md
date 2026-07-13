@@ -104,4 +104,4 @@ Claude Code more ambitious work — because there's always a way back.
 
 ---
 
-*Next post: Connecting Tools with MCP*
+*Next post: [Connecting Tools with MCP]({{ '/en/blog/mcp-ile-arac-baglama/' | relative_url }})*

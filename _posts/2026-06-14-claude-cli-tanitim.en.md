@@ -98,7 +98,7 @@ tail -200 app.log | claude -p "summarize anything that looks anomalous"
 
 Here Claude is no longer a chat session on screen; it's a tool that takes input
 and prints a result, one you can embed inside scripts and CI. This "headless"
-side deserves its own post later in the series; for now it's enough to know the
+side has [its own post]({{ '/en/blog/headless-mode/' | relative_url }}) in the series; for now it's enough to know the
 door exists.
 
 ## A small warning

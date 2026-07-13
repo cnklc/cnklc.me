@@ -28,8 +28,7 @@ CLAUDE.md is a plain markdown file. You put your project's rules, commands, and
 architectural decisions in it. But the official docs make one thing clear: this
 file is **context**, not enforced configuration. Claude reads it and follows it
 as best it can, but there's no "hard block" guarantee. If you need something to
-run or be blocked no matter what, the right tool is a *hook* (I'll cover those
-later in the series). CLAUDE.md guides behavior; it doesn't enforce it.
+run or be blocked no matter what, the right tool is [a *hook*]({{ '/en/blog/hooks-olaylar-matcherlar/' | relative_url }}). CLAUDE.md guides behavior; it doesn't enforce it.
 
 On top of this, Claude now also keeps **auto memory**: it writes its own notes
 based on your corrections and preferences. The two are complementary — you write
