@@ -1,0 +1,43 @@
+---
+layout: default
+lang: tr
+translation_url: /en/vibe-coding-guide/
+title: "Vibe Coding Rehberi — Araçtan Bağımsız Yapay Zekâ ile Geliştirme"
+permalink: /vibe-coding-rehberi/
+description: "Yapay zekâ ile yazılım geliştirmeyi araçtan bağımsız öğreten Türkçe yazı serisi: zihniyet, planlama, prompting, bağlam yönetimi, hata ayıklama, test ve güvenlik — mantıksal öğrenme sırasıyla."
+---
+
+<div class="wrap">
+  <div class="page-head">
+    <h1>Vibe Coding Rehberi</h1>
+    <p>
+      "Vibe Coding Yolculuğu" serisinin tamamı, mantıksal öğrenme sırasıyla.
+      Araçtan bağımsız: Claude Code, Cursor veya başka bir araç fark etmez.
+      Her yazı gerçek bir mini senaryo üzerine kurulu. Yeni yazılar eklendikçe
+      bu sayfa güncellenir.
+    </p>
+  </div>
+
+  {% assign tr_posts = site.posts | where: "lang", "tr" %}
+  {% assign prev_section = "" %}
+  {% for topic in site.data.vibe_coding_seri.topics %}
+    {% assign target = "/blog/" | append: topic.slug | append: "/" %}
+    {% assign match = tr_posts | where: "url", target | first %}
+    {% if topic.section != prev_section %}
+      {% unless forloop.first %}</ol>{% endunless %}
+      <div class="guide-section">
+        <h2 class="guide-section-title">{{ topic.section }}</h2>
+      </div>
+      <ol class="guide-list">
+      {% assign prev_section = topic.section %}
+    {% endif %}
+    {% if match %}
+      <li><a href="{{ match.url | relative_url }}">{{ match.title }}</a></li>
+    {% else %}
+      <li class="guide-soon">{{ topic.title }}<span class="guide-soon-label">{{ site.data.i18n.tr.guide_coming_soon }}</span></li>
+    {% endif %}
+    {% if forloop.last %}</ol>{% endif %}
+  {% endfor %}
+
+  {% include subscribe.html lang="tr" %}
+</div>

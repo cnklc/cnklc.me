@@ -1,0 +1,106 @@
+{
+  "topics": [
+    {
+      "slug": "vibe-coder-zihniyeti",
+      "title": "Vibe Coder Zihniyeti",
+      "section": "Başlangıç",
+      "section_en": "Getting Started"
+    },
+    {
+      "slug": "vibe-coding-araclari",
+      "title": "Vibe Coding Araçları: App Builder'lar ve Kodlama Ajanları",
+      "section": "Başlangıç",
+      "section_en": "Getting Started"
+    },
+    {
+      "slug": "koddan-once-plan",
+      "title": "Koddan Önce Plan: MVP ve Fazlar",
+      "section": "Planlama",
+      "section_en": "Planning"
+    },
+    {
+      "slug": "ai-ile-planlama",
+      "title": "Planlamada Yapay Zekâdan Yardım Almak: Örnekle Anlatmak",
+      "section": "Planlama",
+      "section_en": "Planning"
+    },
+    {
+      "slug": "spec-driven-development",
+      "title": "Spec-Driven Development (SDD) Nedir?",
+      "section": "Planlama",
+      "section_en": "Planning"
+    },
+    {
+      "slug": "populer-stack-secmek",
+      "title": "Popüler Teknoloji Yığını Seçmek: Neden Niş Değil?",
+      "section": "Kod ve Standartlar",
+      "section_en": "Code and Standards"
+    },
+    {
+      "slug": "standartlari-erken-kurmak",
+      "title": "Standartları Erken Kurmak: İlk Çıktıları Dikkatle İncele",
+      "section": "Kod ve Standartlar",
+      "section_en": "Code and Standards"
+    },
+    {
+      "slug": "duzenli-refactoring",
+      "title": "Yapay Zekâya Düzenli Refactoring Yaptırmak",
+      "section": "Kod ve Standartlar",
+      "section_en": "Code and Standards"
+    },
+    {
+      "slug": "spesifik-prompt-tek-gorev",
+      "title": "Spesifik Prompt, Tek Görev",
+      "section": "Prompting",
+      "section_en": "Prompting"
+    },
+    {
+      "slug": "negatif-talimatlar-ve-rol",
+      "title": "Ne Yapmamasını da Söyle: Negatif Talimatlar ve Rol Verme",
+      "section": "Prompting",
+      "section_en": "Prompting"
+    },
+    {
+      "slug": "baglam-dokumani-guncel-tutmak",
+      "title": "Bağlam Dokümanını Güncel Tutmak",
+      "section": "Prompting",
+      "section_en": "Prompting"
+    },
+    {
+      "slug": "baglami-temiz-tutmak",
+      "title": "Bağlamı Temiz Tutmak: Yeni Oturum, Subagent, Uzun Bağlam",
+      "section": "Bağlam",
+      "section_en": "Context"
+    },
+    {
+      "slug": "ai-ile-hata-ayiklama",
+      "title": "Yapay Zekâ ile Hata Ayıklama: Anlamadan Kabul Etme",
+      "section": "Hata Ayıklama",
+      "section_en": "Debugging"
+    },
+    {
+      "slug": "log-ve-mcp-ile-debug",
+      "title": "Log Ekletmek ve MCP ile Debug",
+      "section": "Hata Ayıklama",
+      "section_en": "Debugging"
+    },
+    {
+      "slug": "git-guvenlik-agi",
+      "title": "Git: Vibe Coding'in Güvenlik Ağı",
+      "section": "Sürüm Kontrolü",
+      "section_en": "Version Control"
+    },
+    {
+      "slug": "ai-a-test-yazdirmak",
+      "title": "Yapay Zekâya Test Yazdırmak: TDD ve Bug'ı Kıran Test",
+      "section": "Test",
+      "section_en": "Testing"
+    },
+    {
+      "slug": "sir-yonetimi-ve-guvenlik",
+      "title": "Sırları Koda Gömme: Güvenlik Pratikleri",
+      "section": "Güvenlik",
+      "section_en": "Security"
+    }
+  ]
+}

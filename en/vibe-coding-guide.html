@@ -1,0 +1,41 @@
+---
+layout: default
+lang: en
+translation_url: /vibe-coding-rehberi/
+title: "Vibe Coding Guide — Tool-Agnostic AI-Assisted Development"
+permalink: /en/vibe-coding-guide/
+description: "A post series that teaches building software with AI, independent of any single tool: mindset, planning, prompting, context management, debugging, testing and security — in logical learning order."
+---
+
+<div class="wrap">
+  <div class="page-head">
+    <h1>Vibe Coding Guide</h1>
+    <p>
+      The complete "Vibe Coding Journey" series, in logical learning order.
+      Tool-agnostic: it doesn't matter whether you use Claude Code, Cursor or
+      something else. Every post is built on a real mini scenario. This page
+      is updated as new posts land.
+    </p>
+  </div>
+
+  {% assign en_posts = site.posts | where: "lang", "en" %}
+  {% assign prev_section = "" %}
+  {% for topic in site.data.vibe_coding_seri.topics %}
+    {% assign target = "/en/blog/" | append: topic.slug | append: "/" %}
+    {% assign match = en_posts | where: "url", target | first %}
+    {% if match %}
+      {% if topic.section != prev_section %}
+        {% if prev_section != "" %}</ol>{% endif %}
+        <div class="guide-section">
+          <h2 class="guide-section-title">{{ topic.section_en | default: topic.section }}</h2>
+        </div>
+        <ol class="guide-list">
+        {% assign prev_section = topic.section %}
+      {% endif %}
+      <li><a href="{{ match.url | relative_url }}">{{ match.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  {% if prev_section != "" %}</ol>{% endif %}
+
+  {% include subscribe.html lang="en" %}
+</div>
