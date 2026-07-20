@@ -56,7 +56,7 @@ When "block or don't" isn't enough, exit 0 and print a JSON object to `stdout`. 
 | `suppressOutput` | `false` | if `true`, hides the hook's output from the transcript |
 | `systemMessage` | none | a warning shown to the user |
 
-Events like `PreToolUse` instead return `permissionDecision` (`allow`, `deny`, or `ask`) inside `hookSpecificOutput`. For example, to escalate database write commands for approval:
+Events like `PreToolUse` instead return `permissionDecision` (`allow`, `deny`, `ask`, or `defer`) inside `hookSpecificOutput`. For example, to escalate database write commands for approval:
 
 ```json
 {

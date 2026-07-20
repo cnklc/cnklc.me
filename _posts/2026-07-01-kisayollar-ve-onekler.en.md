@@ -61,7 +61,7 @@ you mean.
 Put `\` at the end of your input and press Enter, and the message isn't
 sent — you move to a new line instead. This is the one method that works in
 every terminal: `Shift+Enter` works natively in some terminals (iTerm2,
-WezTerm, Kitty, Warp, Apple Terminal, Windows Terminal) but needs
+WezTerm, Ghostty, Kitty, Warp, Apple Terminal, Windows Terminal) but needs
 `/terminal-setup` in others; `Ctrl+J` also works everywhere, but `\` +
 Enter is the most familiar of the three.
 

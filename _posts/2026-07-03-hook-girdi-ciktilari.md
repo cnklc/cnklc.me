@@ -55,7 +55,7 @@ Sadece engellemek/engellememek yetmiyorsa, `exit 0` ile çık ve `stdout`'a bir 
 | `suppressOutput` | `false` | `true` ise hook çıktısı transkriptten gizlenir |
 | `systemMessage` | yok | kullanıcıya gösterilen uyarı |
 
-`PreToolUse` gibi olaylar bunun yerine `hookSpecificOutput` içinde `permissionDecision` (`allow`, `deny` veya `ask`) döndürüyor. Örneğin, veritabanına yazma komutlarını onaya düşürmek için:
+`PreToolUse` gibi olaylar bunun yerine `hookSpecificOutput` içinde `permissionDecision` (`allow`, `deny`, `ask` veya `defer`) döndürüyor. Örneğin, veritabanına yazma komutlarını onaya düşürmek için:
 
 ```json
 {

@@ -25,8 +25,9 @@ geçiyor.
 Context window, Claude'un o anki konuşmada görebildiği toplam metnin
 sığdığı alan. Bir oturumda ne yazdıysan, Claude ne cevap verdiyse, hangi
 dosyaları okuduysa, hangi komutları çalıştırıp ne çıktı aldıysa — hepsi bu
-pencerenin içinde duruyor. Mevcut modellerde bu pencere yaklaşık **200.000
-token** büyüklüğünde (kabaca birkaç yüz sayfalık metin).
+pencerenin içinde duruyor. Standart pencere yaklaşık **200.000 token**
+büyüklüğünde (kabaca birkaç yüz sayfalık metin); Sonnet 5 gibi bazı modellerin
+1 milyon token'lık genişletilmiş pencere seçeneği de var.
 
 Önemli nokta şu: pencerenin dışında kalan hiçbir şeyi Claude "bilmez". Yani
 context, Claude'un kısa süreli hafızası gibi. Bu yüzden ne koyduğun kadar,

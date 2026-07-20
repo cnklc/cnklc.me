@@ -43,9 +43,11 @@ Birkaç tanesi neredeyse her oturumda devreye giriyor:
 - **Grep:** Dosya *içinde* desen arar. POSIX grep değil, ripgrep tabanlıdır;
   yani regex söz dizimi biraz farklı (Go'da `interface{}` aramak için kalıp
   `interface\{\}` olur).
-- **Bash:** Terminal komutlarını kalıcı bir kabuk (shell) oturumunda çalıştırır
-  — yani bir komutta `export` ettiğin değişken sonraki komutlara taşınır. Uzun
-  işler için zaman aşımı ayarlanabilir ve komutları arka planda çalıştırabilirsin.
+- **Bash:** Terminal komutlarını çalıştırır. Her komut ayrı bir süreçte koşar
+  — yani bir komutta `export` ettiğin değişken sonraki komuta *taşınmaz*
+  (`cd` ile değiştirdiğin çalışma dizini ise, proje dizini içinde kaldığın
+  sürece taşınır). Uzun işler için zaman aşımı ayarlanabilir ve komutları
+  arka planda çalıştırabilirsin.
 - **Edit:** Dosyada hedefli değişiklik yapar.
 - **Write:** Dosya oluşturur veya baştan yazar.
 

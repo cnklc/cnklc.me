@@ -59,8 +59,8 @@ sağlarsın.
 
 Girdinin sonuna `\` koyup Enter'a basarsan mesaj gönderilmez, yeni bir
 satıra geçersin. Bu, hangi terminalde olursan ol çalışan tek yöntem —
-`Shift+Enter` bazı terminallerde native çalışırken (iTerm2, WezTerm, Kitty,
-Warp, Apple Terminal, Windows Terminal), bazılarında `/terminal-setup`
+`Shift+Enter` bazı terminallerde native çalışırken (iTerm2, WezTerm, Ghostty,
+Kitty, Warp, Apple Terminal, Windows Terminal), bazılarında `/terminal-setup`
 gerektiriyor; `Ctrl+J` de her terminalde çalışıyor ama `\` + Enter en tanıdık
 gelen yöntem.
 

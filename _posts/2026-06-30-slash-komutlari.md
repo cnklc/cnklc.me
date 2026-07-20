@@ -53,12 +53,15 @@ yazısında ayrıca girmiştim. `/context` ise o anki bağlam kullanımını ren
 ızgara olarak gösterir — neyin yer kapladığını görmek için kullanışlı.
 
 Oturum ve model tarafında işine yarayacaklar: `/model` ile kullandığın modeli
-değiştirirsin, `/resume` ile önceki bir konuşmaya dönersin, `/cost` o oturumun
-token kullanımını gösterir, `/config` ise tema, model ve diğer tercihleri
-düzenlediğin ayar arayüzünü açar.
+değiştirirsin, `/resume` ile önceki bir konuşmaya dönersin, `/usage` oturumun
+token istatistiklerini ve plan kullanımını gösterir (`/cost` artık bunun bir
+takma adı), `/config` ise tema, model ve diğer tercihleri düzenlediğin ayar
+arayüzünü açar.
 
-Projeyle ilgili olanlardan ikisi: `/init` projeye bir `CLAUDE.md` rehberi
-oluşturur, `/agents` ise alt ajan yapılandırmalarını yönetir.
+Projeyle ilgili olanlardan biri: `/init` projeye bir `CLAUDE.md` rehberi
+oluşturur. Subagent'ları ise artık bir menüden değil, doğrudan Claude'a
+sorarak ya da `.claude/agents/` dosyalarını düzenleyerek yönetiyorsun —
+`/agents` komutu bugün yalnızca bunu hatırlatan bir not gösteriyor.
 
 Tek tek ezberlemene gerek yok; mantığı şu: oturumun durumuyla ilgili bir şey
 yapmak istediğinde önce `/` yazıp listeye bakman çoğu zaman en hızlısı.

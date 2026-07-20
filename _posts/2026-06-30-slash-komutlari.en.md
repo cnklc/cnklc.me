@@ -56,12 +56,15 @@ post. `/context` shows your current context usage as a colored grid — handy fo
 seeing what's taking up room.
 
 On the session and model side: `/model` switches the model you're using,
-`/resume` returns you to an earlier conversation, `/cost` shows the token usage
-for that session, and `/config` opens the settings interface where you adjust
-the theme, model, and other preferences.
+`/resume` returns you to an earlier conversation, `/usage` shows the session's
+token statistics and your plan usage (`/cost` is now an alias for it), and
+`/config` opens the settings interface where you adjust the theme, model, and
+other preferences.
 
-Two project-related ones: `/init` creates a `CLAUDE.md` guide for the project,
-and `/agents` manages subagent configurations.
+One project-related command: `/init` creates a `CLAUDE.md` guide for the
+project. Subagents, on the other hand, are no longer managed through a menu —
+you ask Claude directly or edit the files under `.claude/agents/`; the
+`/agents` command today just prints a note reminding you of that.
 
 You don't need to memorize them one by one; the logic is simple — when you want
 to do something about the state of the session, typing `/` and scanning the

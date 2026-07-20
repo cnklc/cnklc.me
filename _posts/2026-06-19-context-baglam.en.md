@@ -25,8 +25,9 @@ of using Claude Code effectively comes down to understanding it.
 The context window is the total amount of text Claude can see in the current
 conversation. Everything you've typed, everything Claude replied, every file it
 read, every command it ran and the output it got back — all of it lives inside
-this window. On current models the window is roughly **200,000 tokens** (a few
-hundred pages of text).
+this window. The standard window is roughly **200,000 tokens** (a few hundred
+pages of text); some models, like Sonnet 5, also offer an extended 1-million-token
+window option.
 
 The key point: Claude doesn't "know" anything outside the window. So context is
 like Claude's short-term memory. That means it matters not just what you put in,

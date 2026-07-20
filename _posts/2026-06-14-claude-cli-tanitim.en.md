@@ -59,7 +59,8 @@ brew install --cask claude-code
 
 (Homebrew installs don't auto-update; you'll need to run `brew upgrade
 claude-code` from time to time.) The npm method that used to be common is still
-around too (`npm install -g @anthropic-ai/claude-code`, needs Node 18+), but the
+around too (`npm install -g @anthropic-ai/claude-code`, needs Node 22+; the
+package actually downloads a native binary that doesn't use Node at runtime), but the
 path the docs highlight today is the native install. If you're just starting
 out, following the recommended one is the least surprising option.
 

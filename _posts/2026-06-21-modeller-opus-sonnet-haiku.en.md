@@ -83,8 +83,9 @@ planning and the balanced, economical one for implementation.
 ## A separate choice for subagents
 
 Another nice detail: you can set a separate model for subagents (helper agents).
-If you don't specify one, subagents use their own default (Sonnet); you can set
-`opus`, `haiku`, or use `inherit` to match the main session. Handing a
+If you don't specify one, subagents use the same model as the main session
+(the default is `inherit`); you can set `sonnet`, `opus`, or `haiku` to pick a
+different one. Handing a
 high-volume but simple scanning job to a subagent on Haiku is a fast and cheap
 pattern.
 

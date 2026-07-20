@@ -82,8 +82,9 @@ the same but the conversation has bloated, `/compact`.** The first throws the
 history away, the second summarizes and keeps it.
 
 To see where you stand, two helper commands are useful. `/context` shows how
-much of your context is full as a colored grid; `/cost` reports how many tokens
-you've spent in the session:
+much of your context is full as a colored grid; `/usage` (the old `/cost` is
+now an alias for it) reports the session's token statistics and your plan
+usage:
 
 ```text
 /context

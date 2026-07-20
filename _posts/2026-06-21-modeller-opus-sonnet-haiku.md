@@ -82,9 +82,9 @@ uygulamada dengeli ve ekonomik olanı elde ediyorsun.
 ## Subagent'ler için ayrı seçim
 
 Bir başka güzel detay: subagent'ler (yardımcı ajanlar) için ayrı model
-belirleyebiliyorsun. Belirtmezsen subagent'ler kendi varsayılanını
-(Sonnet) kullanıyor; istersen `opus`, `haiku` ya da ana oturumla aynı kalsın
-diye `inherit` diyebiliyorsun. Hacimli ama basit bir tarama işini bir subagent'e
+belirleyebiliyorsun. Belirtmezsen subagent ana oturumla aynı modeli
+kullanıyor (varsayılan `inherit`); istersen `sonnet`, `opus` ya da `haiku`
+diyerek ayrı bir model seçebiliyorsun. Hacimli ama basit bir tarama işini bir subagent'e
 Haiku ile yaptırmak, hem hızlı hem ucuz bir kalıp.
 
 ## Pratik bir kural

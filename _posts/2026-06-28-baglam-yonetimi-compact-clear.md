@@ -79,8 +79,9 @@ Basit bir ayrım var: **konu değişiyorsa `/clear`, konu aynı ama konuşma
 şişmişse `/compact`.** Birincisi geçmişi atar, ikincisi özetleyip saklar.
 
 Durumu görmek için iki yardımcı komut işine yarar. `/context` bağlamının ne
-kadarının dolduğunu renkli bir ızgarayla gösterir; `/cost` ise o oturumda ne
-kadar token harcadığını verir:
+kadarının dolduğunu renkli bir ızgarayla gösterir; `/usage` (eski `/cost`
+artık bunun takma adı) ise oturumun token istatistiklerini ve plan
+kullanımını verir:
 
 ```text
 /context

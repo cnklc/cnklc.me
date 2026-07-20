@@ -56,7 +56,8 @@ brew install --cask claude-code
 
 (Homebrew kurulumları otomatik güncellenmiyor; ara ara `brew upgrade
 claude-code` çalıştırman gerekiyor.) Eskiden yaygın olan npm yöntemi de
-hâlâ duruyor (`npm install -g @anthropic-ai/claude-code`, Node 18+ ister),
+hâlâ duruyor (`npm install -g @anthropic-ai/claude-code`, Node 22+ ister;
+paket aslında Node kullanmayan native bir binary indiriyor),
 ama dokümanın bugün öne çıkardığı yol native install. Yeni başlıyorsan
 önerileni izlemek en az sürprizli seçenek.
 
