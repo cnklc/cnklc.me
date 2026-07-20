@@ -42,7 +42,7 @@ know roughly what the bill will be at the start of the month, no surprises.
 ## API: pay as you go
 
 The second path is getting an API key from the
-[Anthropic Console](https://console.anthropic.com/) and pointing Claude Code at
+[Anthropic Console](https://console.anthropic.com/){:target="_blank" rel="noopener"} and pointing Claude Code at
 it. There's no fixed fee here; you pay **per token**. That is, the text you send
 the model (input) and the text the model produces (output) are billed per million
 tokens, and the price differs by model (Opus is the most expensive tier, Haiku

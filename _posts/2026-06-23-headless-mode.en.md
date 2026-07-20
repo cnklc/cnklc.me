@@ -45,7 +45,7 @@ cat build-error.txt | claude -p 'concisely explain the root cause of this build 
 
 You can also get output in a machine-readable form. `--output-format` accepts
 three values: `text` (default), `json`, and `stream-json`. To parse the JSON
-output with [jq](https://jqlang.github.io/jq/) and pull out just the text:
+output with [jq](https://jqlang.github.io/jq/){:target="_blank" rel="noopener"} and pull out just the text:
 
 ```bash
 claude -p "summarize this project" --output-format json | jq -r '.result'

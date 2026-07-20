@@ -105,7 +105,7 @@ show better why not signing off blindly on output is part of the mindset.
 ## If you want ready-made scaffolding
 
 You can run the same workflow with ready-made tools instead of hand-written
-Markdown. GitHub's open-source [Spec Kit](https://github.com/github/spec-kit)
+Markdown. GitHub's open-source [Spec Kit](https://github.com/github/spec-kit){:target="_blank" rel="noopener"}
 structures the spec → plan → tasks → implement stages with slash commands and
 works with many agents including Claude Code, Copilot, Cursor and Gemini CLI;
 Amazon's Kiro is an example that embeds a similar workflow into the IDE. AWS

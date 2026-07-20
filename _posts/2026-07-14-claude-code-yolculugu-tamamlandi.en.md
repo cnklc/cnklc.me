@@ -24,8 +24,8 @@ list came from.
 ## The topic list isn't my invention: roadmap.sh
 
 Let me be upfront: the series' topics and scope are not mine. The list is based
-on the community-driven [Claude Code roadmap](https://roadmap.sh/claude-code)
-from [roadmap.sh](https://roadmap.sh).
+on the community-driven [Claude Code roadmap](https://roadmap.sh/claude-code){:target="_blank" rel="noopener"}
+from [roadmap.sh](https://roadmap.sh){:target="_blank" rel="noopener"}.
 
 If you don't know roadmap.sh: it's a free, open-source site publishing learning
 roadmaps for developers. Alongside the classics like backend, frontend, and
@@ -74,5 +74,5 @@ existing posts as significant changes land. If you have feedback, corrections,
 or a topic you think is missing, reach out — the most useful posts usually
 start with a question.
 
-One last thank-you: to the [roadmap.sh](https://roadmap.sh/claude-code)
+One last thank-you: to the [roadmap.sh](https://roadmap.sh/claude-code){:target="_blank" rel="noopener"}
 community that built the skeleton, and to everyone who followed the series.

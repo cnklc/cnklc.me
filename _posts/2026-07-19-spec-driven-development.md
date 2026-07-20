@@ -81,7 +81,7 @@ körüne imza atmamanın neden zihniyetin parçası olduğunu bundan iyi anlatan
 ## Hazır iskelet isteyenlere
 
 Aynı akışı elle Markdown yerine hazır araçlarla da yürütebilirsin. GitHub'ın
-açık kaynak [Spec Kit](https://github.com/github/spec-kit) aracı spec → plan →
+açık kaynak [Spec Kit](https://github.com/github/spec-kit){:target="_blank" rel="noopener"} aracı spec → plan →
 görev → uygulama aşamalarını slash komutlarıyla yapılandırıyor ve Claude Code,
 Copilot, Cursor, Gemini CLI gibi pek çok ajanla çalışıyor; Amazon'un Kiro'su
 da benzer bir akışı IDE'ye gömen bir örnek. AWS ve GitHub, bu yaklaşımla

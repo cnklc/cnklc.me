@@ -12,7 +12,7 @@ roadmap_topic: "What is Vibe Coding?"
 ---
 
 > The first stop in my "Claude Code Journey" series, following the
-> [roadmap.sh/claude-code](https://roadmap.sh/claude-code) curriculum.
+> [roadmap.sh/claude-code](https://roadmap.sh/claude-code){:target="_blank" rel="noopener"} curriculum.
 
 A few years ago, writing code meant typing every single line yourself. Today a
 different approach is becoming common: you describe what you want in natural

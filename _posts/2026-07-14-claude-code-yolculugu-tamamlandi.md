@@ -23,8 +23,8 @@ nereden geldiğini anlatmak istiyorum.
 ## Konu listesi benim icadım değil: roadmap.sh
 
 Baştan açık olayım: serinin konu başlıkları ve kapsamı bana ait değil. Liste,
-[roadmap.sh](https://roadmap.sh)'in topluluk tarafından geliştirilen
-[Claude Code yol haritasına](https://roadmap.sh/claude-code) dayanıyor.
+[roadmap.sh](https://roadmap.sh){:target="_blank" rel="noopener"}'in topluluk tarafından geliştirilen
+[Claude Code yol haritasına](https://roadmap.sh/claude-code){:target="_blank" rel="noopener"} dayanıyor.
 
 roadmap.sh'i bilmeyenler için: geliştiriciler için ücretsiz, açık kaynak
 öğrenme yol haritaları yayınlayan bir site. Backend, frontend, DevOps gibi
@@ -71,5 +71,5 @@ değişiklikler oldukça mevcut yazıları güncelleyeceğim. Seriyle ilgili ger
 bildirimin, düzeltmen veya "şu konu eksik" diyeceğin bir başlık varsa bana
 ulaşabilirsin — en faydalı yazılar genelde bir sorudan çıkıyor.
 
-Son olarak tekrar teşekkür: iskeleti kuran [roadmap.sh](https://roadmap.sh/claude-code)
+Son olarak tekrar teşekkür: iskeleti kuran [roadmap.sh](https://roadmap.sh/claude-code){:target="_blank" rel="noopener"}
 topluluğuna ve seriyi takip eden herkese.

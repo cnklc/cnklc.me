@@ -44,7 +44,7 @@ cat build-error.txt | claude -p 'bu derleme hatasının asıl nedenini kısaca a
 
 Çıktıyı makinenin işleyebileceği biçimde de alabilirsin. `--output-format`
 üç değer kabul eder: `text` (varsayılan), `json` ve `stream-json`. JSON
-çıktıyı [jq](https://jqlang.github.io/jq/) ile ayrıştırıp sadece metni almak:
+çıktıyı [jq](https://jqlang.github.io/jq/){:target="_blank" rel="noopener"} ile ayrıştırıp sadece metni almak:
 
 ```bash
 claude -p "bu projeyi özetle" --output-format json | jq -r '.result'

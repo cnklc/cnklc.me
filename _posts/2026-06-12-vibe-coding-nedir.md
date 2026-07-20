@@ -10,7 +10,7 @@ draft_series: "Claude Code Yolculuğu"
 roadmap_topic: "Vibe Coding Nedir?"
 ---
 
-> Bu yazı, [roadmap.sh/claude-code](https://roadmap.sh/claude-code) müfredatını
+> Bu yazı, [roadmap.sh/claude-code](https://roadmap.sh/claude-code){:target="_blank" rel="noopener"} müfredatını
 > takip ettiğim "Claude Code Yolculuğu" serisinin ilk durağı.
 
 Birkaç yıl önce kod yazmak, her satırı bizzat klavyeden geçirmek demekti. Bugün

@@ -40,7 +40,7 @@ güzel yanı bu: faturanın ne geleceğini ay başında biliyorsun, sürpriz yok
 
 ## API: kullandığın kadar öde
 
-İkinci yol, [Anthropic Console](https://console.anthropic.com/) üzerinden bir
+İkinci yol, [Anthropic Console](https://console.anthropic.com/){:target="_blank" rel="noopener"} üzerinden bir
 API anahtarı alıp Claude Code'a o anahtarı tanıtmak. Burada sabit ücret yok;
 **token başına** ödüyorsun. Yani modele gönderdiğin metin (girdi) ve modelin
 ürettiği metin (çıktı) milyon token üzerinden ücretlendiriliyor ve her model
