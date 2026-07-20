@@ -4,6 +4,7 @@ lang: en
 permalink: /en/blog/populer-stack-secmek/
 translation_url: /blog/populer-stack-secmek/
 title: "Choosing a Popular Tech Stack: Why Not Niche?"
+date: 2026-07-20
 summary: "AI writes its best code in the technologies it has seen most in its training data. On why stack choice in vibe coding should lean 'boring and mainstream' — with a real example from the series project."
 tags: [vibe-coding, tech-stack, ai]
 draft_series: "Vibe Coding Journey"

@@ -119,4 +119,4 @@ then write it" sentence is enough. A plan is also not a contract but a living
 document: something you learn in Phase 2 may change Phase 3. The goal isn't
 bureaucracy — it's keeping every prompt small, clear, and reviewable in scope.
 
-Next post: Getting AI's Help with Planning: Explaining by Example
+Next post: [Getting AI to Help With Planning: Explaining by Example]({{ '/en/blog/ai-ile-planlama/' | relative_url }})

@@ -132,4 +132,4 @@ written" principle. The principle is durable; the tools (Spec Kit, Kiro and
 the rest) may change. Invest in specs for big work; keep your speed for small
 work.
 
-Next post: Choosing a Popular Tech Stack: Why Not Niche?
+Next post: [Choosing a Popular Tech Stack: Why Not Niche?]({{ '/en/blog/populer-stack-secmek/' | relative_url }})

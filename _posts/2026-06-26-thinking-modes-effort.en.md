@@ -33,7 +33,8 @@ on Opus 4.8, for example, you get `low`, `medium`, `high`, `xhigh`, and `max`,
 with `high` as the default.
 
 To change the level mid-session, use the `/effort` command. Called with no
-arguments it opens an interactive slider; you can also set it directly:
+arguments it opens an interactive slider; you can also set it directly
+(`/effort auto` resets to the model default):
 
 ```text
 /effort low
@@ -76,11 +77,15 @@ session, use `Option+T` on macOS or `Alt+T` on Windows and Linux. You can change
 the global default through `/config` (it's stored as `alwaysThinkingEnabled` in
 your settings file).
 
-For simple work where you want to cut costs, you can turn thinking off entirely:
+For simple work where you want to cut costs, you can turn thinking off:
 
 ```bash
 MAX_THINKING_TOKENS=0
 ```
+
+(This isn't an absolute off-switch everywhere: on providers other than the
+Anthropic API, models using adaptive reasoning may still think, and on
+Fable 5 thinking can't be turned off at all.)
 
 An important caveat: thinking tokens are billed even while they're collapsed. Not
 seeing the output doesn't mean you aren't paying for it — what dials the cost down

@@ -33,7 +33,8 @@ Seviyeler modele göre değişir; örneğin Opus 4.8'de `low`, `medium`, `high`,
 `xhigh` ve `max` vardır, varsayılan `high`'tır.
 
 Seviyeyi oturum içinde değiştirmek için `/effort` komutunu kullanırsın.
-Argümansız çağırırsan kayan bir seçici açılır; seviyeyi doğrudan da verebilirsin:
+Argümansız çağırırsan kayan bir seçici açılır; seviyeyi doğrudan da
+verebilirsin (`/effort auto` model varsayılanına döndürür):
 
 ```text
 /effort low
@@ -76,11 +77,15 @@ açıp kapatmak için macOS'ta `Option+T`, Windows/Linux'ta `Alt+T` kısayolu va
 Genel varsayılanı `/config` üzerinden değiştirebilirsin (ayar dosyasında
 `alwaysThinkingEnabled` olarak saklanır).
 
-Basit işlerde maliyeti kısmak için düşünmeyi tamamen kapatabilirsin:
+Basit işlerde maliyeti kısmak için düşünmeyi kapatabilirsin:
 
 ```bash
 MAX_THINKING_TOKENS=0
 ```
+
+(Bu her yerde mutlak bir kapatma değil: Anthropic API dışındaki
+sağlayıcılarda adaptive reasoning kullanan modeller yine düşünebilir ve
+Fable 5'te düşünme hiç kapatılamaz.)
 
 Önemli bir uyarı: düşünme token'ları gizliyken bile faturalanır. Yani çıktıyı
 görmemen ödememen anlamına gelmez — kolu kısan şey effort seviyesi ve thinking

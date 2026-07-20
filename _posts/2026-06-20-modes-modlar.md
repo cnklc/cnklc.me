@@ -72,14 +72,16 @@ yapacağını anlat" demenin temiz bir yolu.
 bir sınıflandırıcı model, her eylemi çalışmadan önce inceler ve isteğinin
 ötesine geçen, tanımadığı altyapıya dokunan ya da Claude'un okuduğu
 düşmanca içerikten kaynaklanan davranışları engeller. Yerel dosya
-işlemleri ve çalışma klasöründeki düzenlemeler serbest; üretime deploy,
-`curl | bash` ya da `main`'e doğrudan push gibi şeyler varsayılan olarak
-bloklanır.
+işlemleri ve çalışma klasöründeki düzenlemeler serbest; üretime deploy ya
+da `curl | bash` gibi şeyler varsayılan olarak bloklanır. Çalıştığın
+reponun branch'lerine push ise (`main` dâhil) artık varsayılan serbest —
+push'un içeriği yine denetleniyor ve `production` gibi deploy adı taşıyan
+branch'ler ayrıca değerlendiriliyor.
 
-Birkaç not: auto modu bir araştırma önizlemesi, yani güvenliği garanti
-etmiyor. Ayrıca belli sürüm ve model gereksinimleri var (güncel Sonnet
-veya Opus, Anthropic API üzerinden). Uzun ve yönüne güvendiğim işlerde
-kullanıyorum, hassas işlerde değil.
+Birkaç not: auto modu izin sorularını azaltır ama güvenliği garanti
+etmez. Ayrıca güncel bir model gerektiriyor (Sonnet 4.6, Opus 4.6 ve
+sonrası); Anthropic API dışındaki sağlayıcılarda da çalışıyor. Uzun ve
+yönüne güvendiğim işlerde kullanıyorum, hassas işlerde değil.
 
 ## dontAsk ve bypassPermissions: uçlardaki iki mod
 

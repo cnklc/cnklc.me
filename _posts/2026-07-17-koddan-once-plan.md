@@ -114,4 +114,4 @@ bir sözleşme değil, yaşayan bir belge: Faz 2'de öğrendiğin bir şey Faz 3
 değiştirebilir. Amaç bürokrasi değil, her prompt'un küçük, net ve denetlenebilir
 bir kapsamda kalması.
 
-Sıradaki yazı: Planlamada Yapay Zekâdan Yardım Almak: Örnekle Anlatmak
+Sıradaki yazı: [Planlamada Yapay Zekâdan Yardım Almak: Örnekle Anlatmak]({{ '/blog/ai-ile-planlama/' | relative_url }})

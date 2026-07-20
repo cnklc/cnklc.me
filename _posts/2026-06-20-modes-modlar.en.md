@@ -71,13 +71,15 @@ change.
 classifier model reviews each action before it runs and blocks anything that
 escalates beyond your request, touches unfamiliar infrastructure, or stems
 from hostile content Claude read. Local file operations and edits in your
-working directory flow freely; things like production deploys, `curl | bash`,
-or pushing straight to `main` are blocked by default.
+working directory flow freely; things like production deploys or `curl | bash`
+are blocked by default. Pushing to your repo's branches (including `main`) is
+now allowed by default — the push's content is still checked, and branches
+with deploy-sounding names like `production` get judged on their own terms.
 
-A few notes: auto mode is a research preview, so it doesn't guarantee safety.
-It also has version and model requirements (a recent Sonnet or Opus, on the
-Anthropic API). I use it for long tasks whose direction I trust, not for
-sensitive work.
+A few notes: auto mode reduces permission prompts but doesn't guarantee
+safety. It also requires a recent model (Sonnet 4.6, Opus 4.6 or later), and
+it works on providers beyond the Anthropic API too. I use it for long tasks
+whose direction I trust, not for sensitive work.
 
 ## dontAsk and bypassPermissions: the two extremes
 

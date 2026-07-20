@@ -158,4 +158,4 @@ don't understand is the herald of code you won't understand. And as in the
 previous post, the plan is not a contract but a living document; if what you
 learned in the critique round changed it, it's already doing its job.
 
-Next post: What Is Spec-Driven Development (SDD)?
+Next post: [What Is Spec-Driven Development (SDD)?]({{ '/en/blog/spec-driven-development/' | relative_url }})

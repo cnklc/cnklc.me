@@ -151,4 +151,4 @@ habercisi. Plan da önceki yazıdaki gibi sözleşme değil, yaşayan bir belge;
 eleştiri turunda öğrendiklerin onu değiştirebildiyse zaten işini yapıyor
 demektir.
 
-Sıradaki yazı: Spec-Driven Development (SDD) Nedir?
+Sıradaki yazı: [Spec-Driven Development (SDD) Nedir?]({{ '/blog/spec-driven-development/' | relative_url }})
