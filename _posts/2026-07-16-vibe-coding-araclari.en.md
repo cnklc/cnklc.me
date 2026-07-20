@@ -12,9 +12,9 @@ roadmap_topic: "Vibe Coding Tools: App Builders and Coding Agents"
 ---
 
 > The second post in the "Vibe Coding Journey" series. In the first post we
-> talked about the [vibe coder mindset]({{ '/en/blog/vibe-coder-zihniyeti/' | relative_url }});
-> now we map out the tools where you'll
-> put that mindset to work.
+> talked about the [vibe coder mindset]({{ '/en/blog/vibe-coder-zihniyeti/' | relative_url }})
+> and introduced the series project, invoice tracking; now we map out the
+> tools where you'll put that mindset to work.
 
 The number of vibe coding tools keeps growing, and every new one introduces
 itself as a "revolution". Fortunately, the chaos is smaller than it looks:
@@ -55,18 +55,45 @@ generated code are all yours.
 
 ## Same request, two different worlds
 
-Let's see the difference with an example. Say you want a simple leave
-tracking app for your team. To an app builder, you'd write:
+Let's see the difference through the series project. The need: being able to
+mark an invoice as paid. If you described this to an app builder from
+scratch, you'd write something like:
 
 ```text
-Build a leave tracking app where employees submit leave requests,
-managers approve them, and there's a calendar view.
+Build an invoice tracking app where I can list invoices, add new
+ones, and mark them as paid.
 ```
 
-Within minutes you get a live prototype. Give the same request to a coding
-agent, and it inspects your existing project structure, writes code that
-follows your standards, and the result lands as a commit in your repo — but
-deploying it and setting up the database is your job.
+Within minutes the interface and database are ready and you get a live
+prototype — but the code lives inside the platform, and most architectural
+decisions were made for you.
+
+I gave the same need to a coding agent in our own project. I kept the prompt
+deliberately short; the expectation was that the agent would inspect the
+existing project and follow its patterns:
+
+```text
+I want to be able to mark an invoice as paid
+```
+
+The agent read the project first and fit the solution into the existing
+structure: it added the id validation to the separate validator pattern we
+had it establish in the previous post, kept the error bodies in the same
+shape as the existing endpoints, and wrote the tests in the project's test
+style. Its closing summary (translated from the actual run):
+
+> You can now mark invoices as "paid". Calling `POST /faturalar/2/ode` sets
+> the invoice's `odendi` field to `true` and returns the updated record. An
+> unknown invoice id returns 404, a non-numeric id (e.g. `/faturalar/abc/ode`)
+> returns 400; marking an already-paid invoice again is harmless and still
+> returns 200. I put the id validation into the separate validator to match
+> the project's existing pattern, and together with four new tests everything
+> passes (11 tests green in total).
+
+I re-ran the tests independently: all 11 pass. The result sits as a commit in
+your repo — but deploying it and setting up the database is your job. That's
+the two worlds in a nutshell: an app builder hands you a finished product
+draft; an agent contributes in your project's own language.
 
 ## How to choose?
 

@@ -5,7 +5,7 @@ permalink: /en/blog/vibe-coder-zihniyeti/
 translation_url: /blog/vibe-coder-zihniyeti/
 title: "The Vibe Coder Mindset: Directing Code Instead of Writing It"
 date: 2026-07-15
-summary: "What really changes in vibe coding isn't the tools — it's your role. What kind of mindset does the shift from writing code line by line to describing intent and reviewing output actually require?"
+summary: "What really changes in vibe coding isn't the tools — it's your role. What kind of mindset does the shift from writing code line by line to describing intent and reviewing output actually require? Shown on a real project."
 tags: [vibe-coding, mindset, ai]
 draft_series: "Vibe Coding Journey"
 roadmap_topic: "The Vibe Coder Mindset"
@@ -17,6 +17,13 @@ roadmap_topic: "The Vibe Coder Mindset"
 > [what vibe coding is]({{ '/en/blog/vibe-coding-nedir/' | relative_url }}) and
 > [what a coding agent is]({{ '/en/blog/coding-agent-nedir/' | relative_url }})
 > make good background reading.
+>
+> One promise up front: the examples in this series weren't written at a desk.
+> Throughout the series we'll work on a single real project — a small,
+> dependency-free Node.js **invoice-tracking** service (starting with in-memory
+> invoice records and a `GET /faturalar` endpoint). Each post grows the project
+> a bit further; every prompt and output you see was actually run against it
+> before publishing.
 
 The first thing to learn when starting with vibe coding isn't a command or a
 tool — it's a role change. You stop being the person who writes code line by
@@ -46,19 +53,53 @@ for an explanation isn't embarrassing in this workflow — it's the workflow.
 In vibe coding, quality depends largely on how well you describe your intent.
 An open-ended request like "add error handling to my app" invites the model to
 fill the gaps with its own interpretation and touch every corner of the project.
-Instead, state the goal, the scope, and the boundaries:
+Instead, state the goal, the scope, and the boundaries. Let me show this through
+our invoice-tracking project's next need — we want to be able to add new
+invoices. This was the prompt I gave the agent:
 
 ```text
-Goal: Add input validation to the POST /api/tasks endpoint.
+Goal: Add a POST /faturalar endpoint — it should create a new invoice record.
 Constraints:
-- Only touch src/routes/tasks.ts and the src/validators/ folder
-- No schema changes
+- Only touch src/app.js, the src/validators/ folder and test/
+- The no, musteri, tutar, vade fields are required; tutar must be a
+  positive number
+- A valid request returns 201 with the created record; an invalid one
+  returns 400 with a per-field error list
+- Don't touch the existing endpoints
 First list your approach and the files you'll edit, then wait for my approval.
 ```
 
-I applied this exact request on a small test project: the change touched only
-those two file paths; a valid request returned 201, an invalid one 400. The
-tighter the scope, the smaller the diff you have to review.
+Before writing any code, the model showed its plan — verbatim (translated from
+the actual run):
+
+```text
+Approach: a standalone validator module for POST /faturalar + a new route
+in app.js. I'll read the body as JSON and validate it; if valid, add the
+record to the store with a new id and return 201, otherwise return 400
+with a per-field error list. I won't touch the existing GET/health/404 flow.
+
+Files to touch:
+- src/validators/faturaValidator.js   (NEW) — no/musteri/tutar/vade
+  required, tutar > 0 check
+- src/app.js                          (POST /faturalar route + JSON body reading)
+- test/faturalar.test.js              (201 valid + 400 invalid scenarios)
+
+Waiting for your approval.
+```
+
+I approved; when the work was done, this was the summary that came back:
+
+> The POST /faturalar endpoint is ready. I moved the required-field checks
+> (no, musteri, tutar, vade) and the "tutar must be positive" rule into a
+> separate validator module, so the route stays thin and the validation logic
+> lives in one place and can be tested on its own. A valid request returns 201
+> with the created record (auto id); an invalid one returns 400 with an error
+> list that says which field failed and why. I didn't touch the existing GET
+> and health endpoints; all 7 tests are green with `npm test`.
+
+I re-ran the tests independently: all seven pass, and the change touched only
+the three file paths I allowed. The tighter the scope, the smaller the diff you
+have to review — reading this one took me five minutes.
 
 The "show me your plan first" part deserves to become a habit of its own:
 seeing what will happen before any code is written is always cheaper than
@@ -69,8 +110,11 @@ planning properly [later in this series]({{ '/en/blog/koddan-once-plan/' | relat
 
 A good vibe coder doesn't trust output by default. The model can state something
 wrong in a confident tone; it can produce code that works but breaks on edge
-cases; it can delete a file you wanted because it judged it "redundant". That's
-why reading the diff, running the tests, and putting extra guards around
+cases; it can delete a file you wanted because it judged it "redundant". The
+summary above sounds reassuring — but before signing off on "7 tests green", I
+checked that the tests actually verify something meaningful: is a negative
+amount really rejected, does the missing-field error point at the right field?
+Reading the diff, running the tests yourself, and putting extra guards around
 critical areas (auth, payments, schema changes) is part of the mindset.
 Skepticism here isn't pessimism — it's how you keep moving fast without losing
 safety.
@@ -88,6 +132,7 @@ commands, and capabilities, and they change fast. But the principles above —
 describe clearly, plan first, read the diff, don't accept what you don't
 understand, protect the critical zones — hold across all of them. That's why
 this series focuses on the practice rather than the tool; tools will appear as
-examples, not as rules.
+examples, not as rules. Our invoice-tracking project now accepts invoices; in
+the coming posts we'll keep building on it.
 
 Next post: [Vibe Coding Tools: App Builders and Coding Agents]({{ '/en/blog/vibe-coding-araclari/' | relative_url }})

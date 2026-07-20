@@ -12,8 +12,8 @@ roadmap_topic: "Vibe Coding Araçları: App Builder'lar ve Kodlama Ajanları"
 
 > "Vibe Coding Yolculuğu" serisinin ikinci yazısı. İlk yazıda
 > [vibe coder zihniyetinden]({{ '/blog/vibe-coder-zihniyeti/' | relative_url }})
-> bahsetmiştik; şimdi bu zihniyeti uygulayacağın araçların
-> haritasını çıkarıyoruz.
+> bahsetmiş ve serinin projesi fatura takibini tanıtmıştık; şimdi bu zihniyeti
+> uygulayacağın araçların haritasını çıkarıyoruz.
 
 Vibe coding araçlarının sayısı hızla artıyor ve her yeni araç kendini
 "devrim" olarak tanıtıyor. Neyse ki karmaşa görünenden küçük: bu araçların
@@ -54,18 +54,43 @@ kurulum, terminal aşinalığı ve üretilen kodu değerlendirme sorumluluğu se
 
 ## Aynı istek, iki farklı dünya
 
-Farkı bir örnekle görelim. Diyelim ki takım için basit bir izin takip
-uygulaması istiyorsun. Bir app builder'a şunu yazarsın:
+Farkı, serinin projesi üzerinden görelim. İhtiyaç şu: bir faturayı "ödendi"
+olarak işaretleyebilmek. Bunu bir app builder'a sıfırdan tarif etseydin şuna
+benzer bir şey yazardın:
 
 ```text
-Çalışanların izin talebi girebildiği, yöneticinin onayladığı,
-takvim görünümü olan bir izin takip uygulaması yap.
+Faturaları listeleyebildiğim, yeni fatura ekleyebildiğim ve
+ödendi olarak işaretleyebildiğim bir fatura takip uygulaması yap.
 ```
 
-Dakikalar içinde yayında bir prototip alırsın. Aynı isteği bir kodlama
-ajanına verdiğinde ise ajan mevcut projenin yapısını inceler, senin
-standartlarına uyan kod yazar ve sonuç senin repo'nda bir commit olarak
-durur — ama yayına almak, veritabanını kurmak senin işindir.
+Dakikalar içinde arayüzü ve veritabanı hazır, yayında bir prototip alırsın —
+ama kod platformun içindedir ve mimari kararların çoğu senin yerine verilmiştir.
+
+Aynı ihtiyacı kendi projemizde bir kodlama ajanına verdim. Prompt'u bilerek
+kısa bıraktım; buradaki beklenti, ajanın mevcut projeyi inceleyip kalıplarına
+uymasıydı:
+
+```text
+bir faturayı ödendi olarak işaretleyebilmek istiyorum
+```
+
+Ajan önce projeyi okudu ve çözümü var olan yapıya yerleştirdi: id doğrulamasını
+önceki yazıda kurdurduğumuz ayrı validator kalıbına ekledi, hata gövdelerini
+mevcut endpoint'lerle aynı biçimde tuttu, testleri de projenin test stiliyle
+yazdı. Kapanış özeti şuydu:
+
+> Faturaları artık "ödendi" olarak işaretleyebilirsin. `POST /faturalar/2/ode`
+> dediğinde ilgili faturanın `odendi` alanı `true` olur ve güncel kayıt geri
+> döner. Olmayan bir fatura numarası verirsen 404, sayı olmayan bir id verirsen
+> (ör. `/faturalar/abc/ode`) 400 alırsın; zaten ödenmiş bir faturayı tekrar
+> işaretlemek sorun çıkarmaz, yine 200 döner. Id doğrulamasını projenin mevcut
+> kalıbına uyacak şekilde ayrı validator'a koydum ve dört yeni testle birlikte
+> hepsi geçiyor (toplam 11 test yeşil).
+
+Testleri bağımsız çalıştırıp doğruladım: 11'i de geçiyor. Sonuç senin repo'nda
+bir commit olarak durur — ama yayına almak, veritabanını kurmak senin işindir.
+İki dünyanın özeti bu: app builder sana bitmiş bir ürün taslağı verir; ajan,
+senin projenin diline uyan bir katkı.
 
 ## Nasıl seçmeli?
 
