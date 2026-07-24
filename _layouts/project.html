@@ -15,6 +15,7 @@ layout: default
     <div class="project-actions">
       {% if page.repo and page.repo != "" %}<a class="btn" href="{{ page.repo }}" target="_blank" rel="noopener">{{ t.source_code }}</a>{% endif %}
       {% if page.demo and page.demo != "" %}<a class="btn btn-ghost" href="{{ page.demo }}" target="_blank" rel="noopener">{{ t.live_demo }}</a>{% endif %}
+      {% if page.example and page.example != "" %}<a class="btn btn-ghost" href="{{ page.example }}" target="_blank" rel="noopener">{{ t.example_link }}</a>{% endif %}
     </div>
   </header>
   <div class="prose">
