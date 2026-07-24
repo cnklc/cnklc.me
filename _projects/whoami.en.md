@@ -40,7 +40,7 @@ the form is filled, all the data becomes a JSON object, gets encoded as URL-safe
 **Base64**, and is embedded directly in the link (`#c=...`):
 
 ```
-https://whoami.cnklc.me/#c=eyJuIjoiQ2FuIiwidCI6Ii4uLiJ9
+https://whoami.cnklc.me/#c=eyJuIjoiQ2FuIEtJTEnDhyIsInQiOiJTb2Z0d2FyZSBEZXZlbG9wZXIiLCJiIjoiIiwiaW1nIjoiY25rbGMubWUiLCJjIjoiIzViOGNmZiIsImwiOlt7InR5cGUiOiJlbWFpbCIsInZhbHVlIjoiY25rbGNAeW1haWwuY29tIn0seyJ0eXBlIjoid2Vic2l0ZSIsInZhbHVlIjoiY25rbGMubWUifSx7InR5cGUiOiJpbnN0YWdyYW0iLCJ2YWx1ZSI6ImNuazFjIn0seyJ0eXBlIjoibGlua2VkaW4iLCJ2YWx1ZSI6ImNuazFjIn1dfQ
 ```
 
 When the page opens, this data is decoded and the card is rendered on the client.
