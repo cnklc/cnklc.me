@@ -124,4 +124,4 @@ tighten the review.
 
 ---
 
-*Next post: Setting Standards Early: Review the First Outputs Carefully*
+*Next post: [Set Standards Early: Review the First Outputs Carefully]({{ '/en/blog/standartlari-erken-kurmak/' | relative_url }})*

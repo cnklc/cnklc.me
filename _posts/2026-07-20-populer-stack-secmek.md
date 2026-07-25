@@ -119,4 +119,4 @@ sıkılaştır.
 
 ---
 
-*Sıradaki yazı: Standartları Erken Kurmak: İlk Çıktıları Dikkatle İncele*
+*Sıradaki yazı: [Standartları Erken Kurmak: İlk Çıktıları Dikkatle İncele]({{ '/blog/standartlari-erken-kurmak/' | relative_url }})*
