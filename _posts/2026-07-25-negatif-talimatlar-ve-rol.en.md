@@ -94,4 +94,4 @@ be honored in every session. If a boundary really matters, repeat it in the
 prompt and — above all — read the diff. A prohibition is no substitute for
 review.
 
-Next post: Keeping the Context Document Current
+Next post: [Keeping the Context Document Current]({{ '/en/blog/baglam-dokumani-guncel-tutmak/' | relative_url }})

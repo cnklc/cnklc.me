@@ -92,4 +92,4 @@ Yine de bir uyarı: yapılandırma dosyasına yazmak, o kuralın her oturumda
 uygulanacağını garanti etmez. Kritik bir sınır varsa prompt'ta tekrar edin ve
 —en önemlisi— diff'i inceleyin. Yasak, denetimin yerini tutmaz.
 
-Sıradaki yazı: Bağlam Dokümanını Güncel Tutmak
+Sıradaki yazı: [Bağlam Dokümanını Güncel Tutmak]({{ '/blog/baglam-dokumani-guncel-tutmak/' | relative_url }})
