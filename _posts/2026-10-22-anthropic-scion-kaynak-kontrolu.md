@@ -2,7 +2,7 @@
 layout: post
 lang: tr
 translation_url: /en/blog/anthropic-scion-kaynak-kontrolu/
-title: "Kod Yazmak Darboğaz Olmayınca: Anthropic Neden Git'in Yerine Scion'ı Yazdı?"
+title: "Darboğaz Artık Kod Değil: Anthropic Neden Git'i Bırakıp Scion'ı Yazdı?"
 date: 2026-10-22
 summary: "Günde 30 binden fazla merge'e ulaşan Anthropic, git'i bırakıp kendi sürüm kontrol sistemini yazdı. Hikâyenin asıl dersi Scion değil: ajanlar kodu hızlandırınca darboğaz bir sonraki katmana kayıyor."
 tags: [git, surum-kontrolu, ai-ajanlari, anthropic]

@@ -3,7 +3,7 @@ layout: post
 lang: en
 permalink: /en/blog/anthropic-scion-kaynak-kontrolu/
 translation_url: /blog/anthropic-scion-kaynak-kontrolu/
-title: "When Writing Code Stops Being the Bottleneck: Why Anthropic Replaced Git with Scion"
+title: "The Bottleneck Is No Longer Code: Why Anthropic Left Git for Scion"
 date: 2026-10-22
 summary: "After passing 30,000 merges a day, Anthropic left git and built its own version control system. The real lesson isn't Scion: when agents speed up coding, the bottleneck moves to the next layer."
 tags: [git, version-control, ai-agents, anthropic]
